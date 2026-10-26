@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Discover thoughtful, modern dental care with Dr. Naz Parvez at Apex Dental Clinic in Dallas. Book your next appointment.">
+  <meta name="description" content="Modern dental care in Dallas with Dr. Naz Parvez.">
   <title>Apex Dental Clinic | Dr. Naz Parvez | Dallas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,11 @@
         extend: {
           colors: {
             sky: { 50: '#f0f9ff', 100: '#e0f2fe', 500: '#0EA5E9', 600: '#0284c7', 700: '#0369a1', 950: '#082f49' },
-            mint: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10B981', 600: '#059669' }
+            mint: { 50: '#ecfdf5', 100: '#d1fae5', 400: '#34d399', 500: '#10B981', 600: '#059669' }
           },
           fontFamily: {
             sans: ['DM Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['Manrope', 'DM Sans', 'ui-sans-serif', 'sans-serif']
+            display: ['Manrope', 'DM Sans', 'ui-sans-serif', 'system-ui', 'sans-serif']
           },
           boxShadow: {
             soft: '0 18px 50px -20px rgba(15, 43, 66, 0.14)',
@@ -47,7 +47,7 @@
     <symbol id="icon-tooth" viewBox="0 0 24 24"><path d="M12 3.5c-1.6-1-4.8-.8-6.4.7-2.2 2.1-1.8 5.7-.8 8.5.8 2.3 1.7 4.3 2.7 5.6.5.7 1.2 1.2 2 1.2 1.3 0 1.4-1.4 2.5-1.4s1.2 1.4 2.5 1.4c.8 0 1.5-.5 2-1.2 1-1.3 1.9-3.3 2.7-5.6 1-2.8 1.4-6.4-.8-8.5-1.6-1.5-4.8-1.7-6.4-.7Z"/><path d="M8.5 7.5c1-.8 2.4-.8 3.5-.2"/></symbol>
     <symbol id="icon-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5L12 3Z"/><path d="m19 14 .9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9L19 14ZM5 3l.6 1.4L7 5l-1.4.6L5 7l-.6-1.4L3 5l1.4-.6L5 3Z"/></symbol>
     <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 8.6c0 4.2-8.8 10-8.8 10s-8.8-5.8-8.8-10a4.6 4.6 0 0 1 8.8-1.8 4.6 4.6 0 0 1 8.8 1.8Z"/><path d="M3.5 12h4l2-3.5 3.2 7 2.2-3.5h5.6"/></symbol>
-    <symbol id="icon-wallet" viewBox="0 0 24 24"><path d="M4 6.5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6.5Zm0 0V5a2 2 0 0 1 2-2h11"/><path d="M20 12h-5a2 2 0 0 0 0 4h5v-4Z"/><path d="M15.5 14h.01"/></symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24"><path d="M4 6.5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6.5Zm0 0V5a2 2 0 0 1 2-2h11"/><path d="M20 12h-5a2 2 0 0 0 0 4h5v-4Z"/></symbol>
     <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
     <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
     <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
@@ -69,99 +69,60 @@
 
   <div class="bg-sky-950 text-sky-50">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-1 px-5 py-2 text-xs sm:flex-row sm:px-8 sm:text-sm">
-      <a href="tel:+12145550199" class="inline-flex items-center gap-2 font-medium transition hover:text-white">
-        <svg class="h-4 w-4 text-mint-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg>
-        <span id="emergency-notice" class="font-semibold">24/7 Emergency Care Available</span>
-        <span id="phone-number" class="font-bold">(214) 555-0199</span>
+      <a id="emergency-phone-link" href="tel:+12145550199" class="inline-flex items-center gap-2 font-medium transition hover:text-white">
+        <svg class="h-4 w-4 shrink-0 text-mint-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg>
+        <span id="emergency-notice"></span>
+        <span id="phone-number" class="font-bold"></span>
       </a>
       <p class="inline-flex items-center gap-2 text-sky-100/85">
-        <svg class="h-4 w-4 text-mint-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-clock"/></svg>
-        Mon–Fri, 8am–6pm <span class="hidden text-sky-100/50 sm:inline">·</span> Sat, 9am–2pm
+        <svg class="h-4 w-4 shrink-0 text-mint-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-clock"/></svg>
+        <span id="hours-notice"></span>
       </p>
     </div>
   </div>
 
   <header class="sticky top-0 z-40 border-b border-slate-100 bg-white/95 backdrop-blur-md">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8" aria-label="Main navigation">
-      <a href="#home" class="group flex shrink-0 items-center gap-2.5" aria-label="Apex Dental Clinic home">
-        <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500 text-white shadow-lg shadow-sky-500/20">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-tooth"/></svg>
-        </span>
-        <span class="display-font text-base font-extrabold leading-tight tracking-tight text-slate-900 sm:text-lg">apex<span class="text-sky-500">.</span><span class="block text-[10px] font-semibold tracking-[0.18em] text-slate-500">DENTAL CLINIC</span></span>
+      <a id="brand-link" href="#home" class="group flex shrink-0 items-center gap-2.5" aria-label="Apex Dental Clinic home">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500 text-white shadow-lg shadow-sky-500/20"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-tooth"/></svg></span>
+        <span class="display-font text-base font-extrabold leading-tight tracking-tight text-slate-900 sm:text-lg"><span data-cms="site.brand_word"></span><span class="text-sky-500">.</span><span data-cms="site.brand_suffix" class="block text-[10px] font-semibold tracking-[0.18em] text-slate-500"></span></span>
       </a>
-      <div class="hidden items-center gap-8 md:flex">
-        <a href="#services" class="text-sm font-semibold text-slate-600 transition hover:text-sky-600">Services</a>
-        <a href="#why-us" class="text-sm font-semibold text-slate-600 transition hover:text-sky-600">Why us</a>
-        <a href="#doctor" class="text-sm font-semibold text-slate-600 transition hover:text-sky-600">Our dentist</a>
-        <a href="#reviews" class="text-sm font-semibold text-slate-600 transition hover:text-sky-600">Reviews</a>
-        <a href="#contact" class="text-sm font-semibold text-slate-600 transition hover:text-sky-600">Contact</a>
-      </div>
+      <div id="desktop-nav-links" class="hidden items-center gap-8 md:flex" aria-label="Site links"></div>
       <a href="#booking" class="hidden items-center gap-2 rounded-lg bg-sky-500 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-sky-500/20 transition hover:bg-sky-600 hover:shadow-lg sm:inline-flex">
-        Book an appointment
-        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg>
+        <span data-cms="navigation.appointment_label"></span><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg>
       </a>
       <button id="menu-toggle" type="button" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 md:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg id="menu-icon" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-menu"/></svg>
       </button>
     </nav>
     <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white px-5 pb-5 md:hidden">
-      <div class="mx-auto flex max-w-7xl flex-col gap-1 pt-3">
-        <a href="#services" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">Services</a>
-        <a href="#why-us" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">Why us</a>
-        <a href="#doctor" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">Our dentist</a>
-        <a href="#reviews" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">Reviews</a>
-        <a href="#contact" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">Contact</a>
-        <a href="#booking" class="mobile-nav-link mt-2 rounded-lg bg-sky-500 px-4 py-3 text-center text-sm font-bold text-white">Book an appointment</a>
-      </div>
+      <div id="mobile-nav-links" class="mx-auto flex max-w-7xl flex-col gap-1 pt-3"></div>
     </div>
   </header>
+  <div id="content-error" class="mx-auto hidden max-w-7xl px-5 py-4 text-sm text-rose-700 sm:px-8" role="alert"></div>
 
-  <main>
+  <main id="main-content">
     <section id="home" class="relative overflow-hidden bg-slate-50">
-      <div class="hero-grid absolute inset-0 opacity-25"></div>
-      <div class="absolute -right-32 top-8 h-96 w-96 rounded-full bg-sky-100/70 blur-3xl"></div>
+      <div class="hero-grid absolute inset-0 opacity-25"></div><div class="absolute -right-32 top-8 h-96 w-96 rounded-full bg-sky-100/70 blur-3xl"></div>
       <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[1.02fr_.98fr] lg:gap-16 lg:py-24">
         <div class="max-w-2xl">
-          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-mint-100 bg-mint-50 px-3.5 py-1.5 text-xs font-bold text-mint-600 sm:text-sm">
-            <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-mint-500 opacity-40"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-mint-500"></span></span>
-            YOUR NEIGHBORHOOD SMILE EXPERTS
-          </div>
-          <h1 id="hero-title" class="display-font text-4xl font-extrabold leading-[1.12] tracking-[-0.045em] text-slate-900 sm:text-5xl lg:text-[3.65rem]">Your Smile Deserves Extraordinary Care</h1>
-          <p id="hero-subtitle" class="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">Dallas's premier cosmetic and general dental practice. Painless care, modern technology, and same-day bookings.</p>
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-mint-100 bg-mint-50 px-3.5 py-1.5 text-xs font-bold text-mint-600 sm:text-sm"><span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-mint-500 opacity-40"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-mint-500"></span></span><span data-cms="hero.badge"></span></div>
+          <h1 id="hero-title" class="display-font text-4xl font-extrabold leading-[1.12] tracking-[-0.045em] text-slate-900 sm:text-5xl lg:text-[3.65rem]"></h1>
+          <p id="hero-subtitle" class="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8"></p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="#booking" class="inline-flex items-center justify-center gap-2 rounded-xl bg-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-sky-500/25 transition hover:-translate-y-0.5 hover:bg-sky-600">
-              Book your visit
-              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg>
-            </a>
-            <a href="tel:+12145550199" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 transition hover:border-sky-200 hover:text-sky-700">
-              <svg class="h-4 w-4 text-sky-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg>
-              Call us now
-            </a>
+            <a href="#booking" class="inline-flex items-center justify-center gap-2 rounded-xl bg-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-sky-500/25 transition hover:-translate-y-0.5 hover:bg-sky-600"><span data-cms="hero.primary_cta"></span><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg></a>
+            <a id="hero-call-link" href="tel:+12145550199" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 transition hover:border-sky-200 hover:text-sky-700"><svg class="h-4 w-4 text-sky-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg><span data-cms="hero.call_cta"></span></a>
           </div>
-          <div class="mt-10 grid grid-cols-3 gap-4 border-t border-slate-200 pt-7 sm:max-w-lg sm:gap-8">
-            <div><p class="display-font text-xl font-extrabold text-slate-900 sm:text-2xl">4.9<span class="text-amber-400">★</span></p><p class="mt-1 text-[11px] leading-4 text-slate-500 sm:text-xs">Patient rating</p></div>
-            <div><p class="display-font text-xl font-extrabold text-slate-900 sm:text-2xl">15k<span class="text-sky-500">+</span></p><p class="mt-1 text-[11px] leading-4 text-slate-500 sm:text-xs">Happy patients</p></div>
-            <div><p class="display-font text-xl font-extrabold text-slate-900 sm:text-2xl">15<span class="text-sky-500">+</span></p><p class="mt-1 text-[11px] leading-4 text-slate-500 sm:text-xs">Years of care</p></div>
-          </div>
+          <div id="trust-badges" class="mt-10 grid grid-cols-3 gap-4 border-t border-slate-200 pt-7 sm:max-w-lg sm:gap-8"></div>
         </div>
         <div class="relative mx-auto w-full max-w-xl lg:max-w-none">
-          <div class="absolute -left-4 top-12 z-10 hidden items-center gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3 shadow-soft sm:flex">
-            <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-mint-50 text-mint-600">
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-shield"/></svg>
-            </span>
-            <span><span class="block text-xs font-bold text-slate-900">Gentle care, always</span><span class="mt-0.5 block text-[11px] text-slate-500">You're in good hands</span></span>
-          </div>
+          <div class="absolute -left-4 top-12 z-10 hidden items-center gap-3 rounded-2xl border border-slate-100 bg-white px-4 py-3 shadow-soft sm:flex"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-mint-50 text-mint-600"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-shield"/></svg></span><span><span data-cms="hero.image_badge_title" class="block text-xs font-bold text-slate-900"></span><span data-cms="hero.image_badge_subtitle" class="mt-0.5 block text-[11px] text-slate-500"></span></span></div>
           <div class="relative overflow-hidden rounded-[2rem] bg-sky-100 shadow-soft">
-            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="A welcoming, modern dental clinic" class="h-[360px] w-full object-cover sm:h-[440px] lg:h-[510px]" fetchpriority="high">
+            <img id="hero-image" src="" alt="" class="h-[360px] w-full object-cover sm:h-[440px] lg:h-[510px]" fetchpriority="high">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-transparent"></div>
             <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-2xl border border-white/60 bg-white/90 p-4 shadow-lg backdrop-blur sm:bottom-7 sm:left-7 sm:right-7 sm:p-5">
-              <div class="flex items-center gap-3">
-                <span class="flex h-11 w-11 items-center justify-center rounded-full bg-mint-50 text-mint-600">
-                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-sparkles"/></svg>
-                </span>
-                <div><p class="text-sm font-bold text-slate-900">A brighter kind of dental care</p><p class="mt-0.5 text-xs text-slate-500">Personal care. Beautiful results.</p></div>
-              </div>
-              <div class="hidden text-right sm:block"><p class="text-sm font-bold text-slate-900">Today, too</p><p class="mt-0.5 text-xs text-mint-600">Appointments available</p></div>
+              <div class="flex items-center gap-3"><span class="flex h-11 w-11 items-center justify-center rounded-full bg-mint-50 text-mint-600"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-sparkles"/></svg></span><div><p data-cms="hero.image_caption_title" class="text-sm font-bold text-slate-900"></p><p data-cms="hero.image_caption_subtitle" class="mt-0.5 text-xs text-slate-500"></p></div></div>
+              <div class="hidden text-right sm:block"><p data-cms="hero.availability_title" class="text-sm font-bold text-slate-900"></p><p data-cms="hero.availability_subtitle" class="mt-0.5 text-xs text-mint-600"></p></div>
             </div>
           </div>
           <div class="absolute -bottom-5 -right-3 -z-0 h-28 w-28 rounded-full border-[18px] border-mint-100 sm:-right-5 sm:h-36 sm:w-36"></div>
@@ -171,189 +132,61 @@
 
     <section id="doctor" class="bg-white py-20 sm:py-24">
       <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
-        <div class="relative mx-auto w-full max-w-lg lg:mx-0">
-          <div class="absolute -left-4 top-12 h-24 w-24 rounded-full bg-sky-100 sm:-left-7 sm:h-32 sm:w-32"></div>
-          <div class="absolute -bottom-4 -right-3 h-28 w-28 rounded-full border-[16px] border-mint-100 sm:-right-5 sm:h-36 sm:w-36"></div>
-          <div class="relative overflow-hidden rounded-[2rem] bg-sky-50 shadow-soft">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Stock portrait of a dental professional" class="h-[360px] w-full object-cover sm:h-[460px]" loading="lazy">
-            <div class="absolute inset-x-4 bottom-4 flex items-center gap-3 rounded-2xl border border-white/70 bg-white/95 p-4 shadow-lg backdrop-blur sm:inset-x-6 sm:bottom-6 sm:p-5">
-              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-mint-50 text-mint-600">
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-heart"/></svg>
-              </span>
-              <div>
-                <p class="text-sm font-bold text-slate-900">A thoughtful approach to every smile</p>
-                <p class="mt-0.5 text-xs text-slate-500">Care that starts with listening</p>
-              </div>
-            </div>
+        <div class="relative mx-auto w-full max-w-lg lg:mx-0"><div class="absolute -left-4 top-12 h-24 w-24 rounded-full bg-sky-100 sm:-left-7 sm:h-32 sm:w-32"></div><div class="absolute -bottom-4 -right-3 h-28 w-28 rounded-full border-[16px] border-mint-100 sm:-right-5 sm:h-36 sm:w-36"></div>
+          <div class="relative overflow-hidden rounded-[2rem] bg-sky-50 shadow-soft"><img id="doctor-image" src="" alt="" class="h-[360px] w-full object-cover sm:h-[460px]" loading="lazy">
+            <div class="absolute inset-x-4 bottom-4 flex items-center gap-3 rounded-2xl border border-white/70 bg-white/95 p-4 shadow-lg backdrop-blur sm:inset-x-6 sm:bottom-6 sm:p-5"><span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-mint-50 text-mint-600"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-heart"/></svg></span><div><p data-cms="doctor.image_badge_title" class="text-sm font-bold text-slate-900"></p><p data-cms="doctor.image_badge_subtitle" class="mt-0.5 text-xs text-slate-500"></p></div></div>
           </div>
         </div>
-        <div class="max-w-xl">
-          <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600">GET TO KNOW YOUR DENTIST</p>
-          <h2 class="display-font mt-3 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-4xl">Meet Dr. Naz Parvez</h2>
-          <p class="mt-5 text-base leading-7 text-slate-600">A great visit starts with feeling heard. Dr. Naz Parvez takes the time to understand your concerns, explain your options in plain language, and help you choose a care plan that feels right for you.</p>
-          <p class="mt-4 text-base leading-7 text-slate-600">Whether you’re here for a routine checkup or exploring treatment, you can expect a gentle approach, honest answers, and care centered around your comfort.</p>
-          <div class="mt-7 grid gap-4 sm:grid-cols-2">
-            <div class="flex items-start gap-3">
-              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint-50 text-mint-600"><svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-check"/></svg></span>
-              <div><h3 class="text-sm font-bold text-slate-900">Time to listen</h3><p class="mt-1 text-xs leading-5 text-slate-500">Your questions and goals come first.</p></div>
-            </div>
-            <div class="flex items-start gap-3">
-              <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint-50 text-mint-600"><svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-check"/></svg></span>
-              <div><h3 class="text-sm font-bold text-slate-900">Clear guidance</h3><p class="mt-1 text-xs leading-5 text-slate-500">Understand your options, with no pressure.</p></div>
-            </div>
-          </div>
-          <a href="#booking" class="mt-8 inline-flex items-center gap-2 rounded-xl bg-sky-500 px-5 py-3 text-sm font-bold text-white shadow-md shadow-sky-500/20 transition hover:-translate-y-0.5 hover:bg-sky-600">
-            Meet your dentist
-            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg>
-          </a>
+        <div class="max-w-xl"><p data-cms="doctor.eyebrow" class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600"></p><h2 id="doctor-title" class="display-font mt-3 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-4xl"></h2><div id="doctor-paragraphs" class="mt-5 space-y-4 text-base leading-7 text-slate-600"></div>
+          <div id="doctor-highlights" class="mt-7 grid gap-4 sm:grid-cols-2"></div>
+          <a href="#booking" class="mt-8 inline-flex items-center gap-2 rounded-xl bg-sky-500 px-5 py-3 text-sm font-bold text-white shadow-md shadow-sky-500/20 transition hover:-translate-y-0.5 hover:bg-sky-600"><span data-cms="doctor.cta_label"></span><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg></a>
         </div>
       </div>
     </section>
 
     <section id="why-us" class="bg-white py-20 sm:py-24">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600">A BETTER DENTAL VISIT</p>
-          <h2 class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Care that puts you first</h2>
-          <p class="mt-4 text-base leading-7 text-slate-600">Your comfort matters as much as your smile. Here's what makes an Apex visit feel different.</p>
-        </div>
-        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          <article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card">
-            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-100 text-sky-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-sparkles"/></svg></span>
-            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Advanced AI Tech</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Advanced digital imaging and AI-assisted tools help us make your care more precise.</p>
-          </article>
-          <article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card">
-            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-mint-50 text-mint-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-heart"/></svg></span>
-            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Painless procedures</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">We take time to listen, explain every step, and keep you comfortable throughout.</p>
-          </article>
-          <article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card">
-            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-wallet"/></svg></span>
-            <h3 class="display-font mt-5 text-base font-bold text-slate-900">0% financing</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Ask us about 0% financing options that can make your treatment more manageable.</p>
-          </article>
-          <article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card">
-            <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-rose-50 text-rose-500"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-clock"/></svg></span>
-            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Urgent care</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Dental emergency? Call our team and we'll help you find the earliest care.</p>
-          </article>
-        </div>
+      <div class="mx-auto max-w-7xl px-5 sm:px-8"><div class="mx-auto max-w-2xl text-center"><p data-cms="features_section.eyebrow" class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600"></p><h2 data-cms="features_section.title" class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl"></h2><p data-cms="features_section.description" class="mt-4 text-base leading-7 text-slate-600"></p></div>
+        <div id="features-grid" class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
       </div>
     </section>
 
     <section id="services" class="bg-slate-50 py-20 sm:py-24">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-          <div class="max-w-xl">
-            <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600">HOW WE CAN HELP</p>
-            <h2 class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Good care for every smile</h2>
-            <p class="mt-4 text-base leading-7 text-slate-600">From your regular checkup to a smile transformation, find the care that's right for you.</p>
-          </div>
-          <a href="#booking" class="inline-flex w-fit items-center gap-2 text-sm font-bold text-sky-600 transition hover:text-sky-700">Find your treatment <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg></a>
-        </div>
-        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-card sm:p-7">
-            <div class="flex items-start justify-between"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-50 text-sky-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-toothbrush"/></svg></span><span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-500">Preventive</span></div>
-            <h3 class="display-font mt-5 text-lg font-bold text-slate-900">General cleanings</h3><p class="mt-2 min-h-[48px] text-sm leading-6 text-slate-600">Keep your smile healthy with a thorough cleaning, exam, and personalized advice.</p>
-            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">Starting at</span><span class="text-sm font-bold text-slate-900">$99</span></div>
-          </article>
-          <article class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-card sm:p-7">
-            <div class="flex items-start justify-between"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-sun"/></svg></span><span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-500">Cosmetic</span></div>
-            <h3 class="display-font mt-5 text-lg font-bold text-slate-900">Teeth whitening</h3><p class="mt-2 min-h-[48px] text-sm leading-6 text-slate-600">A brighter smile with comfortable, professional whitening tailored to you.</p>
-            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">Starting at</span><span class="text-sm font-bold text-slate-900">$249</span></div>
-          </article>
-          <article class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-card sm:p-7">
-            <div class="flex items-start justify-between"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-rose-50 text-rose-500"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-smile"/></svg></span><span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-500">Cosmetic</span></div>
-            <h3 class="display-font mt-5 text-lg font-bold text-slate-900">Cosmetic dentistry</h3><p class="mt-2 min-h-[48px] text-sm leading-6 text-slate-600">Thoughtful veneers and bonding to help you feel confident in your smile.</p>
-            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">Consultation</span><span class="text-sm font-bold text-mint-600">Complimentary</span></div>
-          </article>
-          <article class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-card sm:p-7">
-            <div class="flex items-start justify-between"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-mint-50 text-mint-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-implant"/></svg></span><span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-500">Restorative</span></div>
-            <h3 class="display-font mt-5 text-lg font-bold text-slate-900">Dental implants</h3><p class="mt-2 min-h-[48px] text-sm leading-6 text-slate-600">A secure, natural-looking replacement designed to help restore your smile.</p>
-            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">Starting at</span><span class="text-sm font-bold text-slate-900">$1,999</span></div>
-          </article>
-          <article class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-card sm:p-7">
-            <div class="flex items-start justify-between"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-50 text-violet-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-align"/></svg></span><span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-500">Orthodontics</span></div>
-            <h3 class="display-font mt-5 text-lg font-bold text-slate-900">Orthodontics</h3><p class="mt-2 min-h-[48px] text-sm leading-6 text-slate-600">Explore clear aligners and personalized plans for a straighter, healthier smile.</p>
-            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">Consultation</span><span class="text-sm font-bold text-mint-600">Complimentary</span></div>
-          </article>
-          <article class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-card sm:p-7">
-            <div class="flex items-start justify-between"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-orange-500"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-heart"/></svg></span><span class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-600">Same-day help</span></div>
-            <h3 class="display-font mt-5 text-lg font-bold text-slate-900">Emergency care</h3><p class="mt-2 min-h-[48px] text-sm leading-6 text-slate-600">Prompt, compassionate attention when an unexpected toothache can't wait.</p>
-            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">Call us</span><a href="tel:+12145550199" class="text-sm font-bold text-sky-600 hover:text-sky-700"><span data-clinic-phone-text>(214) 555-0199</span></a></div>
-          </article>
-        </div>
+      <div class="mx-auto max-w-7xl px-5 sm:px-8"><div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div class="max-w-xl"><p data-cms="services_section.eyebrow" class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600"></p><h2 data-cms="services_section.title" class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl"></h2><p data-cms="services_section.description" class="mt-4 text-base leading-7 text-slate-600"></p></div><a href="#booking" class="inline-flex w-fit items-center gap-2 text-sm font-bold text-sky-600 transition hover:text-sky-700"><span data-cms="services_section.link_label"></span><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg></a></div>
+        <div id="services-grid" class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
       </div>
     </section>
 
     <section class="overflow-hidden bg-sky-950 py-16 sm:py-20">
-      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_auto]">
-        <div class="max-w-2xl">
-          <p class="text-xs font-bold uppercase tracking-[0.18em] text-mint-400">A LITTLE MORE PEACE OF MIND</p>
-          <h2 class="display-font mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Good care should feel good, too.</h2>
-          <p class="mt-4 max-w-xl text-base leading-7 text-sky-100/75">No pressure, no judgment—just clear answers, a friendly team, and a plan that works for you.</p>
-        </div>
-        <a href="#booking" class="inline-flex w-fit items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-sky-950 transition hover:bg-sky-50">Meet your care team <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg></a>
-      </div>
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_auto]"><div class="max-w-2xl"><p data-cms="callout.eyebrow" class="text-xs font-bold uppercase tracking-[0.18em] text-mint-400"></p><h2 data-cms="callout.title" class="display-font mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl"></h2><p data-cms="callout.description" class="mt-4 max-w-xl text-base leading-7 text-sky-100/75"></p></div><a href="#booking" class="inline-flex w-fit items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-sky-950 transition hover:bg-sky-50"><span data-cms="callout.cta_label"></span><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg></a></div>
     </section>
 
     <section id="reviews" class="bg-white py-20 sm:py-24">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600">KIND WORDS, REAL SMILES</p>
-          <h2 class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Our patients say it best</h2>
-          <div class="mt-4 inline-flex items-center gap-2 text-sm"><span class="font-bold text-slate-900">4.9 out of 5</span><span class="tracking-[0.15em] text-amber-400">★★★★★</span><span class="text-slate-500">from our happy patients</span></div>
-        </div>
-        <div class="mt-12 grid gap-5 lg:grid-cols-3">
-          <article class="flex flex-col rounded-2xl border border-slate-100 bg-slate-50/70 p-6 sm:p-7">
-            <div class="flex items-center justify-between"><span class="tracking-[0.16em] text-amber-400" aria-label="5 out of 5 stars">★★★★★</span><svg class="h-5 w-5 text-sky-200" fill="currentColor" stroke="none"><use href="#icon-quote"/></svg></div>
-            <blockquote class="mt-5 flex-1 text-sm leading-7 text-slate-600">“I used to dread going to the dentist. Everyone here made me feel comfortable from the minute I walked in. Best cleaning I've ever had!”</blockquote>
-            <div class="mt-6 flex items-center justify-between border-t border-slate-200 pt-5"><div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-sky-100 text-sm font-bold text-sky-700">SM</span><div><p class="text-sm font-bold text-slate-900">Sarah M.</p><p class="text-xs text-slate-500">Patient since 2021</p></div></div><span class="inline-flex items-center gap-1 rounded-full bg-mint-50 px-2 py-1 text-[10px] font-bold text-mint-600"><svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-check"/></svg> VERIFIED</span></div>
-          </article>
-          <article class="flex flex-col rounded-2xl border border-slate-100 bg-slate-50/70 p-6 sm:p-7">
-            <div class="flex items-center justify-between"><span class="tracking-[0.16em] text-amber-400" aria-label="5 out of 5 stars">★★★★★</span><svg class="h-5 w-5 text-sky-200" fill="currentColor" stroke="none"><use href="#icon-quote"/></svg></div>
-            <blockquote class="mt-5 flex-1 text-sm leading-7 text-slate-600">“The team was so kind and explained every part of my treatment. My new smile has made such a difference. I can't recommend Apex enough.”</blockquote>
-            <div class="mt-6 flex items-center justify-between border-t border-slate-200 pt-5"><div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-mint-100 text-sm font-bold text-mint-600">JD</span><div><p class="text-sm font-bold text-slate-900">James D.</p><p class="text-xs text-slate-500">Patient since 2022</p></div></div><span class="inline-flex items-center gap-1 rounded-full bg-mint-50 px-2 py-1 text-[10px] font-bold text-mint-600"><svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-check"/></svg> VERIFIED</span></div>
-          </article>
-          <article class="flex flex-col rounded-2xl border border-slate-100 bg-slate-50/70 p-6 sm:p-7">
-            <div class="flex items-center justify-between"><span class="tracking-[0.16em] text-amber-400" aria-label="5 out of 5 stars">★★★★★</span><svg class="h-5 w-5 text-sky-200" fill="currentColor" stroke="none"><use href="#icon-quote"/></svg></div>
-            <blockquote class="mt-5 flex-1 text-sm leading-7 text-slate-600">“I had an emergency over the weekend and they were incredibly responsive. They fit me in first thing and took such good care of me.”</blockquote>
-            <div class="mt-6 flex items-center justify-between border-t border-slate-200 pt-5"><div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-violet-100 text-sm font-bold text-violet-700">AL</span><div><p class="text-sm font-bold text-slate-900">Amanda L.</p><p class="text-xs text-slate-500">Patient since 2020</p></div></div><span class="inline-flex items-center gap-1 rounded-full bg-mint-50 px-2 py-1 text-[10px] font-bold text-mint-600"><svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-check"/></svg> VERIFIED</span></div>
-          </article>
-        </div>
+      <div class="mx-auto max-w-7xl px-5 sm:px-8"><div class="mx-auto max-w-2xl text-center"><p data-cms="reviews_section.eyebrow" class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600"></p><h2 data-cms="reviews_section.title" class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl"></h2><div class="mt-4 inline-flex items-center gap-2 text-sm"><span data-cms="reviews_section.rating" class="font-bold text-slate-900"></span><span class="tracking-[0.15em] text-amber-400" aria-hidden="true">★★★★★</span><span data-cms="reviews_section.rating_caption" class="text-slate-500"></span></div></div>
+        <div id="reviews-grid" class="mt-12 grid gap-5 lg:grid-cols-3"></div>
       </div>
     </section>
 
     <section id="booking" class="bg-slate-50 py-20 sm:py-24">
-      <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
-        <div class="pt-2">
-          <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600">LET'S GET YOU SMILING</p>
-          <h2 class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Your next visit starts here</h2>
-          <p class="mt-4 text-base leading-7 text-slate-600">Tell us a little about yourself and the team will call to find a time that works. We can't wait to meet you.</p>
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[.8fr_1.2fr] lg:gap-20"><div class="pt-2"><p data-cms="booking.eyebrow" class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600"></p><h2 data-cms="booking.title" class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl"></h2><p data-cms="booking.description" class="mt-4 text-base leading-7 text-slate-600"></p>
           <div class="mt-8 space-y-5">
-            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg></span><div><p class="text-xs text-slate-500">Call us directly</p><a href="tel:+12145550199" class="text-sm font-bold text-slate-900 hover:text-sky-600"><span data-clinic-phone-text>(214) 555-0199</span></a></div></div>
-            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-clock"/></svg></span><div><p class="text-xs text-slate-500">We're open</p><p class="text-sm font-bold text-slate-900">Mon–Fri, 8am–6pm · Sat, 9am–2pm</p></div></div>
-            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-pin"/></svg></span><div><p class="text-xs text-slate-500">Serving our community</p><p class="text-sm font-bold text-slate-900">Dallas, Texas</p></div></div>
+            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg></span><div><p data-cms="booking.phone_label" class="text-xs text-slate-500"></p><a id="booking-phone" href="tel:+12145550199" class="text-sm font-bold text-slate-900 hover:text-sky-600"></a></div></div>
+            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-clock"/></svg></span><div><p data-cms="booking.hours_label" class="text-xs text-slate-500"></p><p id="booking-hours" class="text-sm font-bold text-slate-900"></p></div></div>
+            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-pin"/></svg></span><div><p data-cms="booking.address_label" class="text-xs text-slate-500"></p><p id="booking-address" class="text-sm font-bold text-slate-900"></p></div></div>
           </div>
-          <p class="mt-8 inline-flex items-center gap-2 rounded-lg bg-mint-50 px-3 py-2 text-xs font-semibold text-mint-600"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-check"/></svg> New patients are always welcome</p>
+          <p class="mt-8 inline-flex items-center gap-2 rounded-lg bg-mint-50 px-3 py-2 text-xs font-semibold text-mint-600"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-check"/></svg><span data-cms="booking.welcome_badge"></span></p>
         </div>
         <form id="booking-form" class="rounded-2xl border border-slate-100 bg-white p-6 shadow-soft sm:p-8" novalidate>
-          <h3 class="display-font text-xl font-bold text-slate-900">Request an appointment</h3>
-          <p class="mt-1 text-sm text-slate-500">We'll be in touch to confirm your visit.</p>
+          <h3 data-cms="booking.form_title" class="display-font text-xl font-bold text-slate-900"></h3><p data-cms="booking.form_description" class="mt-1 text-sm text-slate-500"></p>
           <div class="mt-6 grid gap-5 sm:grid-cols-2">
-            <div><label for="full-name" class="mb-1.5 block text-xs font-bold text-slate-700">Full name <span class="text-rose-500">*</span></label><input id="full-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100"></div>
-            <div><label for="phone" class="mb-1.5 block text-xs font-bold text-slate-700">Phone number <span class="text-rose-500">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100"></div>
-            <div><label for="email" class="mb-1.5 block text-xs font-bold text-slate-700">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="jane@example.com" class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100"></div>
-            <div><label for="service" class="mb-1.5 block text-xs font-bold text-slate-700">What can we help with? <span class="text-rose-500">*</span></label><select id="service" name="service" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-700 outline-none transition focus:border-sky-400 focus:ring-4 focus:ring-sky-100"><option value="">Choose a service</option><option>General cleanings</option><option>Teeth whitening</option><option>Cosmetic dentistry</option><option>Dental implants</option><option>Orthodontics</option><option>Emergency care</option><option>Something else</option></select></div>
-            <div class="sm:col-span-2"><label for="date" class="mb-1.5 block text-xs font-bold text-slate-700">Preferred date <span class="text-rose-500">*</span></label><div class="relative"><input id="date" name="date" type="date" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-700 outline-none transition focus:border-sky-400 focus:ring-4 focus:ring-sky-100"><svg class="pointer-events-none absolute right-3.5 top-3.5 h-4 w-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-calendar"/></svg></div></div>
+            <div><label id="name-label" for="full-name" class="mb-1.5 block text-xs font-bold text-slate-700"></label><input id="full-name" name="name" type="text" autocomplete="name" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100"></div>
+            <div><label id="phone-field-label" for="phone" class="mb-1.5 block text-xs font-bold text-slate-700"></label><input id="phone" name="phone" type="tel" autocomplete="tel" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100"></div>
+            <div><label id="email-label" for="email" class="mb-1.5 block text-xs font-bold text-slate-700"></label><input id="email" name="email" type="email" autocomplete="email" class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100"></div>
+            <div><label id="service-label" for="service" class="mb-1.5 block text-xs font-bold text-slate-700"></label><select id="service" name="service" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-700 outline-none transition focus:border-sky-400 focus:ring-4 focus:ring-sky-100"></select></div>
+            <div class="sm:col-span-2"><label id="date-label" for="date" class="mb-1.5 block text-xs font-bold text-slate-700"></label><div class="relative"><input id="date" name="date" type="date" required class="w-full rounded-lg border border-slate-200 bg-white px-3.5 py-3 text-sm text-slate-700 outline-none transition focus:border-sky-400 focus:ring-4 focus:ring-sky-100"><svg class="pointer-events-none absolute right-3.5 top-3.5 h-4 w-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-calendar"/></svg></div></div>
           </div>
           <div id="booking-message" role="status" aria-live="polite" class="mt-4 hidden rounded-lg px-4 py-3 text-sm"></div>
-          <button type="submit" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-md shadow-sky-500/20 transition hover:bg-sky-600">
-            Confirm booking request
-            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg>
-          </button>
-          <p class="mt-3 text-center text-xs leading-5 text-slate-400">By submitting, you agree that our team may contact you about your appointment.</p>
+          <button type="submit" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-md shadow-sky-500/20 transition hover:bg-sky-600"><span data-cms="booking.submit_label"></span><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg></button>
+          <p data-cms="booking.consent_text" class="mt-3 text-center text-xs leading-5 text-slate-400"></p>
         </form>
       </div>
     </section>
@@ -361,210 +194,318 @@
 
   <footer id="contact" class="bg-sky-950 text-sky-100">
     <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-2 lg:grid-cols-4">
-      <div class="lg:col-span-1">
-        <a href="#home" class="inline-flex items-center gap-2.5">
-          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500 text-white"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-tooth"/></svg></span>
-          <span class="display-font text-lg font-extrabold leading-tight tracking-tight text-white">apex<span class="text-sky-400">.</span><span class="block text-[10px] font-semibold tracking-[0.18em] text-sky-100/60">DENTAL CLINIC</span></span>
-        </a>
-        <p class="mt-4 max-w-xs text-sm leading-6 text-sky-100/65">Thoughtful, modern dentistry for brighter, healthier smiles. We're glad you're here.</p>
-      </div>
-      <div><h3 class="text-sm font-bold text-white">Explore</h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li><a class="transition hover:text-white" href="#services">Our services</a></li><li><a class="transition hover:text-white" href="#why-us">Why choose Apex</a></li><li><a class="transition hover:text-white" href="#reviews">Patient reviews</a></li><li><a class="transition hover:text-white" href="#booking">Book a visit</a></li></ul></div>
-      <div><h3 class="text-sm font-bold text-white">Come see us</h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-pin"/></svg>Serving Dallas, Texas</li><li><a class="flex items-center gap-2 transition hover:text-white" href="tel:+12145550199"><svg class="h-4 w-4 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg><span data-clinic-phone-text>(214) 555-0199</span></a></li></ul></div>
-      <div><h3 class="text-sm font-bold text-white">Clinic hours</h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li class="flex justify-between gap-4"><span>Monday – Friday</span><span class="text-white">8am – 6pm</span></li><li class="flex justify-between gap-4"><span>Saturday</span><span class="text-white">9am – 2pm</span></li><li class="flex justify-between gap-4"><span>Sunday</span><span class="text-white">Closed</span></li></ul><a href="tel:+12145550199" data-clinic-phone class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-mint-400 transition hover:text-mint-300"><span class="h-2 w-2 rounded-full bg-mint-500"></span>Emergency? Call us</a></div>
+      <div><a href="#home" class="inline-flex items-center gap-2.5"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500 text-white"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-tooth"/></svg></span><span class="display-font text-lg font-extrabold leading-tight tracking-tight text-white"><span data-cms="site.brand_word"></span><span class="text-sky-400">.</span><span data-cms="site.brand_suffix" class="block text-[10px] font-semibold tracking-[0.18em] text-sky-100/60"></span></span></a><p data-cms="footer.description" class="mt-4 max-w-xs text-sm leading-6 text-sky-100/65"></p></div>
+      <div><h3 data-cms="footer.quick_links_title" class="text-sm font-bold text-white"></h3><ul id="footer-links" class="mt-4 space-y-3 text-sm text-sky-100/65"></ul></div>
+      <div><h3 data-cms="footer.contact_title" class="text-sm font-bold text-white"></h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li id="footer-address" class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-pin"/></svg><span></span></li><li id="footer-phone-item"><a id="footer-phone" class="flex items-center gap-2 transition hover:text-white"><svg class="h-4 w-4 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg><span></span></a></li><li id="footer-email-item"><a id="footer-email" class="transition hover:text-white"></a></li></ul></div>
+      <div><h3 data-cms="footer.hours_title" class="text-sm font-bold text-white"></h3><ul id="footer-hours" class="mt-4 space-y-3 text-sm text-sky-100/65"></ul><a id="footer-emergency" href="tel:+12145550199" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-mint-400 transition hover:text-mint-300"><span class="h-2 w-2 rounded-full bg-mint-500"></span><span data-cms="footer.emergency_link_label"></span></a></div>
     </div>
-    <div class="border-t border-white/10">
-      <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-sky-100/50 sm:flex-row sm:items-center sm:justify-between sm:px-8">
-        <p>© <span id="current-year"></span> Apex Dental Clinic. All rights reserved.</p>
-        <p>Care with a little more heart. <span class="text-rose-300">♥</span></p>
-      </div>
-    </div>
+    <div class="border-t border-white/10"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-sky-100/50 sm:flex-row sm:items-center sm:justify-between sm:px-8"><p>© <span id="current-year"></span> <span data-cms="footer.copyright"></span></p><p><span data-cms="footer.closing_note"></span> <span class="text-rose-300">♥</span></p></div></div>
   </footer>
 
   <div id="chat-panel" class="fixed bottom-24 right-4 z-50 hidden w-[calc(100vw-2rem)] max-w-[380px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl shadow-slate-950/20 sm:right-6" role="dialog" aria-modal="false" aria-labelledby="chat-title">
-    <div class="flex items-center justify-between bg-sky-950 px-5 py-4">
-      <div class="flex items-center gap-3">
-        <span class="relative flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-sparkles"/></svg><span class="absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-sky-950 bg-mint-500"></span></span>
-        <div><h2 id="chat-title" class="text-sm font-bold text-white">Apex AI Assistant</h2><p class="mt-0.5 text-[11px] text-sky-100/70">Here to help · Replies instantly</p></div>
-      </div>
-      <button id="chat-close" type="button" class="flex h-8 w-8 items-center justify-center rounded-lg text-sky-100/70 transition hover:bg-white/10 hover:text-white" aria-label="Close chat"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-x"/></svg></button>
-    </div>
-    <div id="chat-messages" class="chat-scroll flex h-[320px] flex-col gap-3 overflow-y-auto bg-slate-50 px-4 py-4" aria-live="polite">
-      <div class="max-w-[88%] self-start rounded-2xl rounded-tl-sm border border-slate-100 bg-white px-3.5 py-3 text-sm leading-5 text-slate-700 shadow-sm">
-        Hi there! 👋 I'm the Apex AI Assistant. What can I help you with today?
-        <div class="mt-3 flex flex-wrap gap-2">
-          <button type="button" class="quick-reply rounded-full border border-sky-100 bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-700 transition hover:bg-sky-100">Book Cleanings</button>
-          <button type="button" class="quick-reply rounded-full border border-sky-100 bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-700 transition hover:bg-sky-100">Insurance Info</button>
-          <button type="button" class="quick-reply rounded-full border border-sky-100 bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-700 transition hover:bg-sky-100">Emergency Care</button>
-        </div>
-      </div>
-    </div>
-    <form id="chat-form" class="flex items-center gap-2 border-t border-slate-100 bg-white p-3">
-      <label for="chat-input" class="sr-only">Type your message</label>
-      <input id="chat-input" type="text" autocomplete="off" placeholder="Type your message..." class="min-w-0 flex-1 rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100">
-      <button type="submit" aria-label="Send message" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-500 text-white transition hover:bg-sky-600"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-send"/></svg></button>
-    </form>
+    <div class="flex items-center justify-between bg-sky-950 px-5 py-4"><div class="flex items-center gap-3"><span class="relative flex h-10 w-10 items-center justify-center rounded-full bg-sky-500 text-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-sparkles"/></svg><span class="absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-sky-950 bg-mint-500"></span></span><div><h2 id="chat-title" data-cms="chat.title" class="text-sm font-bold text-white"></h2><p data-cms="chat.status" class="mt-0.5 text-[11px] text-sky-100/70"></p></div></div><button id="chat-close" type="button" class="flex h-8 w-8 items-center justify-center rounded-lg text-sky-100/70 transition hover:bg-white/10 hover:text-white"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-x"/></svg><span class="sr-only" data-cms="chat.close_label"></span></button></div>
+    <div id="chat-messages" class="chat-scroll flex h-[320px] flex-col gap-3 overflow-y-auto bg-slate-50 px-4 py-4" aria-live="polite"><div id="chat-welcome" class="max-w-[92%] self-start rounded-2xl rounded-tl-sm border border-slate-100 bg-white px-3.5 py-3 text-sm leading-5 text-slate-700 shadow-sm"><p id="chat-welcome-text"></p><div id="chat-quick-replies" class="mt-3 flex flex-wrap gap-2"></div></div></div>
+    <form id="chat-form" class="flex items-center gap-2 border-t border-slate-100 bg-white p-3"><label for="chat-input" class="sr-only" data-cms="chat.input_label"></label><input id="chat-input" type="text" autocomplete="off" class="min-w-0 flex-1 rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-sky-400 focus:ring-4 focus:ring-sky-100"><button id="chat-send" type="submit" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-500 text-white transition hover:bg-sky-600"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-send"/></svg></button></form>
   </div>
-  <button id="chat-toggle" type="button" class="fixed bottom-5 right-4 z-50 flex h-14 items-center gap-2.5 rounded-full bg-sky-500 px-5 text-white shadow-lg shadow-sky-500/30 transition hover:-translate-y-1 hover:bg-sky-600 sm:bottom-6 sm:right-6" aria-label="Open Apex AI Assistant" aria-expanded="false" aria-controls="chat-panel">
-    <svg id="chat-toggle-icon" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-chat"/></svg>
-    <span class="text-sm font-bold">Ask Apex</span>
-  </button>
+  <button id="chat-toggle" type="button" class="fixed bottom-5 right-4 z-50 flex h-14 items-center gap-2.5 rounded-full bg-sky-500 px-5 text-white shadow-lg shadow-sky-500/30 transition hover:-translate-y-1 hover:bg-sky-600 sm:bottom-6 sm:right-6" aria-expanded="false" aria-controls="chat-panel"><svg id="chat-toggle-icon" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-chat"/></svg><span id="chat-toggle-label" class="text-sm font-bold"></span></button>
 
   <script>
+    const allowedIcons = new Set(['sparkles', 'heart', 'wallet', 'clock', 'toothbrush', 'sun', 'smile', 'implant', 'align']);
+    const colorStyles = {
+      sky: 'bg-sky-100 text-sky-700',
+      mint: 'bg-mint-100 text-mint-600',
+      violet: 'bg-violet-100 text-violet-700'
+    };
+
+    const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    })[character]);
+
+    function safeHref(value, fallback = '#') {
+      const href = String(value ?? '').trim();
+      if (/^#[\w-]+$/.test(href) || /^(tel|mailto):[+\w.@-]+$/i.test(href) || /^https:\/\/[^\s]+$/i.test(href)) return href;
+      return fallback;
+    }
+
+    function safeImageSource(value) {
+      const source = String(value ?? '').trim();
+      return /^https:\/\/[^\s]+$/i.test(source) || /^\/(?!\/)[^\s]*$/.test(source) ? source : '';
+    }
+
+    function getValue(data, path) {
+      return path.split('.').reduce((value, key) => value && value[key], data);
+    }
+
+    function text(data, path) {
+      const value = getValue(data, path);
+      return typeof value === 'string' || typeof value === 'number' ? String(value) : '';
+    }
+
+    function setText(data, path, selector = `[data-cms="${path}"]`) {
+      document.querySelectorAll(selector).forEach((element) => {
+        element.textContent = text(data, path);
+      });
+    }
+
+    function icon(name, classes = 'h-6 w-6') {
+      const validName = allowedIcons.has(name) ? name : 'heart';
+      return `<svg class="${classes}" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><use href="#icon-${validName}"></use></svg>`;
+    }
+
+    function renderNavigation(data) {
+      const links = Array.isArray(data.navigation.links) ? data.navigation.links : [];
+      document.getElementById('desktop-nav-links').innerHTML = links.map((link) =>
+        `<a href="${escapeHtml(safeHref(link.href))}" class="text-sm font-semibold text-slate-600 transition hover:text-sky-600">${escapeHtml(link.label)}</a>`
+      ).join('');
+      const mobileLinks = links.map((link) =>
+        `<a href="${escapeHtml(safeHref(link.href))}" class="mobile-nav-link rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">${escapeHtml(link.label)}</a>`
+      ).join('');
+      document.getElementById('mobile-nav-links').innerHTML = `${mobileLinks}<a href="#booking" class="mobile-nav-link mt-2 rounded-lg bg-sky-500 px-4 py-3 text-center text-sm font-bold text-white">${escapeHtml(data.navigation.appointment_label)}</a>`;
+    }
+
+    function renderTrustBadges(data) {
+      const badges = Array.isArray(data.hero.trust_badges) ? data.hero.trust_badges : [];
+      document.getElementById('trust-badges').innerHTML = badges.map((badge) =>
+        `<div><p class="display-font text-xl font-extrabold text-slate-900 sm:text-2xl">${escapeHtml(badge.value)}<span class="text-sky-500">${escapeHtml(badge.suffix)}</span></p><p class="mt-1 text-[11px] leading-4 text-slate-500 sm:text-xs">${escapeHtml(badge.label)}</p></div>`
+      ).join('');
+    }
+
+    function renderDoctor(data) {
+      const doctor = data.doctor;
+      document.getElementById('doctor-paragraphs').innerHTML = (Array.isArray(doctor.paragraphs) ? doctor.paragraphs : [])
+        .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join('');
+      document.getElementById('doctor-highlights').innerHTML = (Array.isArray(doctor.highlights) ? doctor.highlights : [])
+        .map((item) => `<div class="flex items-start gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-mint-50 text-mint-600">${icon('heart', 'h-3.5 w-3.5')}</span><div><h3 class="text-sm font-bold text-slate-900">${escapeHtml(item.title)}</h3><p class="mt-1 text-xs leading-5 text-slate-500">${escapeHtml(item.description)}</p></div></div>`).join('');
+    }
+
+    function renderFeatures(data) {
+      document.getElementById('features-grid').innerHTML = (Array.isArray(data.features_section.features) ? data.features_section.features : [])
+        .map((item) => `<article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-100 text-sky-600">${icon(item.icon)}</span><h3 class="display-font mt-5 text-base font-bold text-slate-900">${escapeHtml(item.title)}</h3><p class="mt-2 text-sm leading-6 text-slate-600">${escapeHtml(item.description)}</p></article>`).join('');
+    }
+
+    function renderServices(data) {
+      document.getElementById('services-grid').innerHTML = (Array.isArray(data.services_section.services) ? data.services_section.services : [])
+        .map((item) => {
+          const price = item.price_is_phone
+            ? `<a href="${escapeHtml(phoneHref(data.site.phone_link))}" class="text-sm font-bold text-sky-600 hover:text-sky-700">${escapeHtml(item.price)}</a>`
+            : `<span class="text-sm font-bold ${item.price === 'Complimentary' ? 'text-mint-600' : 'text-slate-900'}">${escapeHtml(item.price)}</span>`;
+          return `<article class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-card sm:p-7"><div class="flex items-start justify-between"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-50 text-sky-600">${icon(item.icon)}</span><span class="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-500">${escapeHtml(item.category)}</span></div><h3 class="display-font mt-5 text-lg font-bold text-slate-900">${escapeHtml(item.title)}</h3><p class="mt-2 min-h-[48px] text-sm leading-6 text-slate-600">${escapeHtml(item.description)}</p><div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">${escapeHtml(item.price_label)}</span>${price}</div></article>`;
+        }).join('');
+    }
+
+    function renderReviews(data) {
+      document.getElementById('reviews-grid').innerHTML = (Array.isArray(data.reviews_section.reviews) ? data.reviews_section.reviews : [])
+        .map((review) => {
+          const stars = Math.max(0, Math.min(5, Number(review.stars) || 0));
+          const avatar = colorStyles[review.avatar_color] || colorStyles.sky;
+          return `<article class="flex flex-col rounded-2xl border border-slate-100 bg-slate-50/70 p-6 sm:p-7"><div class="flex items-center justify-between"><span class="tracking-[0.16em] text-amber-400" aria-label="${stars} out of 5 stars">${'★'.repeat(stars)}</span><svg class="h-5 w-5 text-sky-200" fill="currentColor" stroke="none" aria-hidden="true"><use href="#icon-quote"></use></svg></div><blockquote class="mt-5 flex-1 text-sm leading-7 text-slate-600">“${escapeHtml(review.quote)}”</blockquote><div class="mt-6 flex items-center justify-between border-t border-slate-200 pt-5"><div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-full ${avatar} text-sm font-bold">${escapeHtml(review.initials)}</span><div><p class="text-sm font-bold text-slate-900">${escapeHtml(review.patient_name)}</p><p class="text-xs text-slate-500">${escapeHtml(review.patient_since)}</p></div></div><span class="inline-flex items-center gap-1 rounded-full bg-mint-50 px-2 py-1 text-[10px] font-bold text-mint-600">${icon('heart', 'h-3 w-3')} ${escapeHtml(data.reviews_section.verified_label)}</span></div></article>`;
+        }).join('');
+    }
+
+    function phoneHref(value) {
+      const digits = String(value ?? '').replace(/\D/g, '');
+      if (digits.length < 7 || digits.length > 15) return '#';
+      return `tel:+${digits.startsWith('1') ? digits : `1${digits}`}`;
+    }
+
+    function renderBooking(data) {
+      const booking = data.booking;
+      const service = document.getElementById('service');
+      service.innerHTML = `<option value="">${escapeHtml(booking.service_placeholder)}</option>` +
+        (Array.isArray(booking.service_options) ? booking.service_options : [])
+          .map((option) => `<option value="${escapeHtml(option)}">${escapeHtml(option)}</option>`).join('');
+      const requiredMark = '<span class="text-rose-500" aria-hidden="true"> *</span>';
+      document.getElementById('name-label').innerHTML = `${escapeHtml(booking.name_label)}${requiredMark}`;
+      document.getElementById('phone-field-label').innerHTML = `${escapeHtml(booking.phone_field_label)}${requiredMark}`;
+      document.getElementById('email-label').textContent = booking.email_label;
+      document.getElementById('service-label').innerHTML = `${escapeHtml(booking.service_label)}${requiredMark}`;
+      document.getElementById('date-label').innerHTML = `${escapeHtml(booking.date_label)}${requiredMark}`;
+      document.getElementById('full-name').placeholder = booking.name_placeholder;
+      document.getElementById('phone').placeholder = booking.phone_placeholder;
+      document.getElementById('email').placeholder = booking.email_placeholder;
+      document.getElementById('phone').autocomplete = 'tel';
+      const href = phoneHref(data.site.phone_link);
+      document.getElementById('booking-phone').href = href;
+      document.getElementById('booking-phone').textContent = data.site.phone_number;
+      document.getElementById('booking-hours').textContent = data.site.hours_notice;
+      document.getElementById('booking-address').textContent = data.site.address;
+    }
+
+    function renderFooter(data) {
+      const footer = data.footer;
+      document.getElementById('footer-links').innerHTML = (Array.isArray(footer.quick_links) ? footer.quick_links : [])
+        .map((link) => `<li><a class="transition hover:text-white" href="${escapeHtml(safeHref(link.href))}">${escapeHtml(link.label)}</a></li>`).join('');
+      document.getElementById('footer-hours').innerHTML = (Array.isArray(footer.clinic_hours) ? footer.clinic_hours : [])
+        .map((hours) => `<li class="flex justify-between gap-4"><span>${escapeHtml(hours.day)}</span><span class="text-white">${escapeHtml(hours.hours)}</span></li>`).join('');
+      document.querySelector('#footer-address span').textContent = data.site.address;
+      document.querySelector('#footer-phone span').textContent = data.site.phone_number;
+      document.getElementById('footer-phone').href = phoneHref(data.site.phone_link);
+      document.getElementById('footer-emergency').href = phoneHref(data.site.phone_link);
+      const emailItem = document.getElementById('footer-email-item');
+      if (data.site.email) {
+        const email = String(data.site.email).trim();
+        document.getElementById('footer-email').href = `mailto:${email.replace(/[^\w.+@-]/g, '')}`;
+        document.getElementById('footer-email').textContent = email;
+        emailItem.hidden = false;
+      } else {
+        emailItem.hidden = true;
+      }
+    }
+
+    function renderChat(data) {
+      document.getElementById('chat-welcome-text').textContent = data.chat.welcome_message;
+      document.getElementById('chat-toggle-label').textContent = data.chat.toggle_label;
+      document.getElementById('chat-input').placeholder = data.chat.input_placeholder;
+      document.getElementById('chat-close').setAttribute('aria-label', data.chat.close_label);
+      document.getElementById('chat-send').setAttribute('aria-label', data.chat.send_label);
+      document.getElementById('chat-input').setAttribute('aria-label', data.chat.input_label);
+      document.getElementById('chat-toggle').setAttribute('aria-label', data.chat.open_accessibility_label);
+      document.getElementById('chat-quick-replies').innerHTML = (Array.isArray(data.chat.quick_replies) ? data.chat.quick_replies : [])
+        .map((reply) => `<button type="button" data-prompt="${escapeHtml(reply.prompt)}" class="quick-reply rounded-full border border-sky-100 bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-700 transition hover:bg-sky-100">${escapeHtml(reply.label)}</button>`).join('');
+    }
+
+    function hydrate(data) {
+      document.title = text(data, 'site.page_title');
+      document.querySelector('meta[name="description"]').content = text(data, 'site.meta_description');
+      document.getElementById('brand-link').setAttribute('aria-label', `${data.site.name} home`);
+      document.querySelector('nav[aria-label]').setAttribute('aria-label', `${data.site.name} navigation`);
+      document.querySelectorAll('[data-cms]').forEach((element) => {
+        const value = getValue(data, element.dataset.cms);
+        if (typeof value === 'string' || typeof value === 'number') element.textContent = String(value);
+      });
+      document.getElementById('hero-title').textContent = data.hero.title;
+      document.getElementById('hero-subtitle').textContent = data.hero.subtitle;
+      document.getElementById('doctor-title').textContent = data.doctor.title;
+      document.getElementById('hero-image').src = safeImageSource(data.hero.image);
+      document.getElementById('hero-image').alt = data.hero.image_alt;
+      document.getElementById('doctor-image').src = safeImageSource(data.doctor.image);
+      document.getElementById('doctor-image').alt = data.doctor.image_alt;
+      const href = phoneHref(data.site.phone_link);
+      document.getElementById('phone-number').textContent = data.site.phone_number;
+      ['emergency-phone-link', 'hero-call-link'].forEach((id) => document.getElementById(id).href = href);
+      renderNavigation(data);
+      renderTrustBadges(data);
+      renderDoctor(data);
+      renderFeatures(data);
+      renderServices(data);
+      renderReviews(data);
+      renderBooking(data);
+      renderFooter(data);
+      renderChat(data);
+      menuToggle.setAttribute('aria-label', data.navigation.menu_open_label);
+      document.getElementById('mobile-menu').setAttribute('aria-label', `${data.site.name} mobile navigation`);
+      document.getElementById('chat-panel').setAttribute('aria-labelledby', 'chat-title');
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      document.body.classList.add('cms-ready');
+    }
+
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIcon = document.querySelector('#menu-icon use');
-
     menuToggle.addEventListener('click', () => {
-      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!isOpen));
-      menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
-      mobileMenu.classList.toggle('hidden', isOpen);
-      menuIcon.setAttribute('href', isOpen ? '#icon-menu' : '#icon-x');
+      const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+      menuToggle.setAttribute('aria-expanded', String(open));
+      const labels = window.homepageContent && window.homepageContent.navigation;
+      if (labels) menuToggle.setAttribute('aria-label', open ? labels.menu_close_label : labels.menu_open_label);
+      mobileMenu.classList.toggle('hidden', !open);
+      menuIcon.setAttribute('href', open ? '#icon-x' : '#icon-menu');
     });
-
-    document.querySelectorAll('.mobile-nav-link').forEach((link) => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.setAttribute('aria-label', 'Open navigation menu');
-        menuIcon.setAttribute('href', '#icon-menu');
-      });
+    document.getElementById('mobile-nav-links').addEventListener('click', (event) => {
+      if (!event.target.closest('a')) return;
+      mobileMenu.classList.add('hidden');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      if (window.homepageContent) menuToggle.setAttribute('aria-label', window.homepageContent.navigation.menu_open_label);
+      menuIcon.setAttribute('href', '#icon-menu');
     });
 
     const bookingForm = document.getElementById('booking-form');
     const bookingMessage = document.getElementById('booking-message');
     const dateInput = document.getElementById('date');
-    const today = new Date();
-    const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().split('T')[0];
-    dateInput.min = localToday;
-
+    const now = new Date();
+    dateInput.min = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().split('T')[0];
     bookingForm.addEventListener('submit', (event) => {
       event.preventDefault();
       if (!bookingForm.reportValidity()) return;
-
       const name = document.getElementById('full-name').value.trim();
       bookingMessage.className = 'mt-4 rounded-lg bg-mint-50 px-4 py-3 text-sm font-medium text-mint-600';
-      bookingMessage.textContent = `Thanks, ${name}! Your appointment request has been received. Our team will call you to confirm your visit.`;
+      bookingMessage.textContent = window.homepageContent.booking.success_message.replace('{name}', name);
       bookingForm.reset();
-      dateInput.min = localToday;
     });
-
-    document.getElementById('current-year').textContent = new Date().getFullYear();
 
     const chatToggle = document.getElementById('chat-toggle');
     const chatPanel = document.getElementById('chat-panel');
-    const chatClose = document.getElementById('chat-close');
-    const chatToggleIcon = document.querySelector('#chat-toggle-icon use');
-    const chatMessages = document.getElementById('chat-messages');
-    const chatForm = document.getElementById('chat-form');
     const chatInput = document.getElementById('chat-input');
-
-    function setChatOpen(isOpen) {
-      chatPanel.classList.toggle('hidden', !isOpen);
-      chatToggle.setAttribute('aria-expanded', String(isOpen));
-      chatToggle.setAttribute('aria-label', isOpen ? 'Close Apex AI Assistant' : 'Open Apex AI Assistant');
-      chatToggleIcon.setAttribute('href', isOpen ? '#icon-x' : '#icon-chat');
-      if (isOpen) chatInput.focus();
+    const chatMessages = document.getElementById('chat-messages');
+    function setChatOpen(open) {
+      if (!window.homepageContent) return;
+      chatPanel.classList.toggle('hidden', !open);
+      chatToggle.setAttribute('aria-expanded', String(open));
+      chatToggle.setAttribute('aria-label', open ? window.homepageContent.chat.close_accessibility_label : window.homepageContent.chat.open_accessibility_label);
+      document.querySelector('#chat-toggle-icon use').setAttribute('href', open ? '#icon-x' : '#icon-chat');
+      if (open) chatInput.focus();
     }
+    chatToggle.addEventListener('click', () => setChatOpen(chatToggle.getAttribute('aria-expanded') !== 'true'));
+    document.getElementById('chat-close').addEventListener('click', () => setChatOpen(false));
 
-    chatToggle.addEventListener('click', () => {
-      setChatOpen(chatToggle.getAttribute('aria-expanded') !== 'true');
-    });
-    chatClose.addEventListener('click', () => setChatOpen(false));
-
-    function addChatMessage(text, isUser) {
-      const message = document.createElement('div');
-      message.className = isUser
+    function addChatMessage(message, isUser) {
+      const element = document.createElement('div');
+      element.className = isUser
         ? 'max-w-[88%] self-end rounded-2xl rounded-tr-sm bg-sky-500 px-3.5 py-2.5 text-sm leading-5 text-white shadow-sm'
-        : 'max-w-[88%] self-start rounded-2xl rounded-tl-sm border border-slate-100 bg-white px-3.5 py-2.5 text-sm leading-5 text-slate-700 shadow-sm';
-      message.textContent = text;
-      chatMessages.appendChild(message);
+        : 'max-w-[92%] self-start rounded-2xl rounded-tl-sm border border-slate-100 bg-white px-3.5 py-2.5 text-sm leading-5 text-slate-700 shadow-sm';
+      element.textContent = message;
+      chatMessages.appendChild(element);
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }
-
     function getBotReply(prompt) {
-      const text = prompt.toLowerCase();
-      const clinicPhone = document.getElementById('phone-number').textContent;
-      if (text.includes('clean') || text.includes('book') || text.includes('appointment') || text.includes('schedule')) {
-        return `We’d love to see you! Request a visit using the appointment form on this page, or call us at ${clinicPhone}. Our team will help find a time that works.`;
-      }
-      if (text.includes('insurance') || text.includes('coverage') || text.includes('plan')) {
-        return `We’re happy to help with insurance questions. Coverage varies by plan, so please call ${clinicPhone} and our team can walk you through your options.`;
-      }
-      if (text.includes('emergency') || text.includes('urgent') || text.includes('pain') || text.includes('toothache')) {
-        return `We’re sorry you’re uncomfortable. Call us now at ${clinicPhone} for help finding the earliest available emergency visit. If you have a life-threatening emergency, call your local emergency services.`;
-      }
-      if (text.includes('hour') || text.includes('open') || text.includes('time')) {
-        return 'We’re open Monday to Friday, 8am–6pm, and Saturday, 9am–2pm. We’re closed on Sundays.';
-      }
-      if (text.includes('price') || text.includes('cost') || text.includes('financ')) {
-        return 'Costs depend on your treatment. General cleanings start at $99, and we offer complimentary consultations for cosmetic dentistry and orthodontics. Ask our team about 0% financing.';
-      }
-      if (text.includes('address') || text.includes('location') || text.includes('where')) {
-        return `Apex Dental Clinic serves patients in Dallas, Texas. Call ${clinicPhone} for directions and appointment information.`;
-      }
-      return `Thanks for reaching out! Our friendly team can help with that. Call ${clinicPhone}, or request an appointment using the booking form on this page.`;
+      const content = window.homepageContent;
+      const query = prompt.toLowerCase();
+      let category = 'default';
+      if (/clean|book|appointment|schedule/.test(query)) category = 'booking';
+      else if (/insurance|coverage|plan/.test(query)) category = 'insurance';
+      else if (/emergency|urgent|pain|toothache/.test(query)) category = 'emergency';
+      else if (/hour|open|time/.test(query)) category = 'hours';
+      else if (/price|cost|financ/.test(query)) category = 'cost';
+      else if (/address|location|where/.test(query)) category = 'location';
+      return content.chat.replies[category].replaceAll('{phone}', content.site.phone_number);
     }
-
-    function sendChatMessage(text) {
-      const prompt = text.trim();
+    function sendChatMessage(value) {
+      const prompt = String(value || '').trim();
       if (!prompt) return;
       addChatMessage(prompt, true);
       chatInput.value = '';
       window.setTimeout(() => addChatMessage(getBotReply(prompt), false), 350);
     }
-
-    chatForm.addEventListener('submit', (event) => {
+    document.getElementById('chat-form').addEventListener('submit', (event) => {
       event.preventDefault();
       sendChatMessage(chatInput.value);
     });
-
-    chatMessages.addEventListener('click', (event) => {
+    document.getElementById('chat-quick-replies').addEventListener('click', (event) => {
       const button = event.target.closest('.quick-reply');
-      if (button) sendChatMessage(button.textContent);
+      if (button) sendChatMessage(button.dataset.prompt);
     });
 
     fetch('/content/homepage.json')
       .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Could not load homepage content: ${response.status}`);
-        }
+        if (!response.ok) throw new Error(`Homepage content request failed (${response.status}).`);
         return response.json();
       })
       .then((content) => {
-        if (typeof content.hero_title === 'string' && content.hero_title.trim()) {
-          document.getElementById('hero-title').textContent = content.hero_title;
+        if (!content || typeof content !== 'object' || !content.site || !content.hero || !content.chat || !content.booking) {
+          throw new Error('Homepage content is missing required sections.');
         }
-        if (typeof content.hero_subtitle === 'string' && content.hero_subtitle.trim()) {
-          document.getElementById('hero-subtitle').textContent = content.hero_subtitle;
-        }
-        if (typeof content.phone_number === 'string' && content.phone_number.trim()) {
-          document.getElementById('phone-number').textContent = content.phone_number;
-          const digits = content.phone_number.replace(/\D/g, '');
-          const internationalNumber = digits.startsWith('1') ? digits : `1${digits}`;
-          const phoneHref = `tel:+${internationalNumber}`;
-          document.querySelectorAll('a[href^="tel:"]').forEach((element) => {
-            element.setAttribute('href', phoneHref);
-          });
-          document.querySelectorAll('[data-clinic-phone-text]').forEach((element) => {
-            element.textContent = content.phone_number;
-          });
-        }
-        if (typeof content.emergency_notice === 'string' && content.emergency_notice.trim()) {
-          document.getElementById('emergency-notice').textContent = content.emergency_notice;
-        }
+        window.homepageContent = content;
+        hydrate(content);
       })
       .catch((error) => {
         console.error('Unable to load Apex Dental Clinic CMS content.', error);
+        const errorBanner = document.getElementById('content-error');
+        errorBanner.textContent = 'We’re having trouble loading this page right now. Please call the clinic for assistance.';
+        errorBanner.classList.remove('hidden');
       });
 
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', (user) => {
-        if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            window.location.href = '/admin/';
-          });
-        }
+        if (!user) window.netlifyIdentity.on('login', () => { window.location.href = '/admin/'; });
       });
     }
   </script>

@@ -14,15 +14,219 @@ collections:
         file: "content/homepage.json"
         format: "json"
         fields:
-          - label: "Hero title"
-            name: "hero_title"
-            widget: "string"
-          - label: "Hero subtitle"
-            name: "hero_subtitle"
-            widget: "text"
-          - label: "Phone number"
-            name: "phone_number"
-            widget: "string"
-          - label: "Emergency notice"
-            name: "emergency_notice"
-            widget: "string"
+          - label: "Practice details"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Practice name", name: "name", widget: "string" }
+              - { label: "Logo word", name: "brand_word", widget: "string" }
+              - { label: "Logo subtitle", name: "brand_suffix", widget: "string" }
+              - { label: "Browser page title", name: "page_title", widget: "string" }
+              - { label: "Search description", name: "meta_description", widget: "text" }
+              - { label: "Emergency notice", name: "emergency_notice", widget: "string" }
+              - { label: "Phone number", name: "phone_number", widget: "string" }
+              - { label: "Phone link number (international format)", name: "phone_link", widget: "string" }
+              - { label: "Short clinic hours", name: "hours_notice", widget: "string" }
+              - { label: "Address or service area", name: "address", widget: "string" }
+              - { label: "Email address", name: "email", widget: "string", required: false }
+          - label: "Navigation"
+            name: "navigation"
+            widget: "object"
+            fields:
+              - label: "Navigation links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - { label: "Link label", name: "label", widget: "string" }
+                  - { label: "Link destination", name: "href", widget: "string" }
+              - { label: "Appointment button", name: "appointment_label", widget: "string" }
+              - { label: "Open menu accessibility label", name: "menu_open_label", widget: "string" }
+              - { label: "Close menu accessibility label", name: "menu_close_label", widget: "string" }
+          - label: "Hero section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Headline", name: "title", widget: "string" }
+              - { label: "Subheadline", name: "subtitle", widget: "text" }
+              - { label: "Primary button", name: "primary_cta", widget: "string" }
+              - { label: "Call button", name: "call_cta", widget: "string" }
+              - { label: "Hero image", name: "image", widget: "image" }
+              - { label: "Hero image description", name: "image_alt", widget: "string" }
+              - { label: "Image badge title", name: "image_badge_title", widget: "string" }
+              - { label: "Image badge subtitle", name: "image_badge_subtitle", widget: "string" }
+              - { label: "Image caption title", name: "image_caption_title", widget: "string" }
+              - { label: "Image caption subtitle", name: "image_caption_subtitle", widget: "string" }
+              - { label: "Availability title", name: "availability_title", widget: "string" }
+              - { label: "Availability subtitle", name: "availability_subtitle", widget: "string" }
+              - label: "Trust badges"
+                name: "trust_badges"
+                widget: "list"
+                fields:
+                  - { label: "Value", name: "value", widget: "string" }
+                  - { label: "Suffix", name: "suffix", widget: "string", required: false }
+                  - { label: "Caption", name: "label", widget: "string" }
+          - label: "Doctor section"
+            name: "doctor"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Doctor heading", name: "title", widget: "string" }
+              - { label: "Doctor portrait", name: "image", widget: "image" }
+              - { label: "Portrait description", name: "image_alt", widget: "string" }
+              - { label: "Image badge title", name: "image_badge_title", widget: "string" }
+              - { label: "Image badge subtitle", name: "image_badge_subtitle", widget: "string" }
+              - label: "Biography paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - label: "Doctor highlights"
+                name: "highlights"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - { label: "Button label", name: "cta_label", widget: "string" }
+          - label: "Why choose us section"
+            name: "features_section"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Feature cards"
+                name: "features"
+                widget: "list"
+                fields:
+                  - { label: "Icon name", name: "icon", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+          - label: "Services section"
+            name: "services_section"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Section link label", name: "link_label", widget: "string" }
+              - label: "Service cards"
+                name: "services"
+                widget: "list"
+                fields:
+                  - { label: "Icon name", name: "icon", widget: "string" }
+                  - { label: "Category badge", name: "category", widget: "string" }
+                  - { label: "Service name", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Price prefix", name: "price_label", widget: "string" }
+                  - { label: "Price or value", name: "price", widget: "string" }
+                  - { label: "Display price as phone link", name: "price_is_phone", widget: "boolean", required: false }
+          - label: "Feature callout"
+            name: "callout"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Button label", name: "cta_label", widget: "string" }
+          - label: "Reviews section"
+            name: "reviews_section"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "title", widget: "string" }
+              - { label: "Overall rating", name: "rating", widget: "string" }
+              - { label: "Rating caption", name: "rating_caption", widget: "string" }
+              - { label: "Verified badge", name: "verified_label", widget: "string" }
+              - label: "Patient testimonials"
+                name: "reviews"
+                widget: "list"
+                fields:
+                  - { label: "Star rating", name: "stars", widget: "number", value_type: "int", min: 1, max: 5 }
+                  - { label: "Patient quote", name: "quote", widget: "text" }
+                  - { label: "Patient name", name: "patient_name", widget: "string" }
+                  - { label: "Patient since", name: "patient_since", widget: "string" }
+                  - { label: "Avatar initials", name: "initials", widget: "string" }
+                  - { label: "Avatar color (sky, mint, violet)", name: "avatar_color", widget: "string" }
+          - label: "Appointment section and form"
+            name: "booking"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Phone label", name: "phone_label", widget: "string" }
+              - { label: "Hours label", name: "hours_label", widget: "string" }
+              - { label: "Address label", name: "address_label", widget: "string" }
+              - { label: "Welcome badge", name: "welcome_badge", widget: "string" }
+              - { label: "Form heading", name: "form_title", widget: "string" }
+              - { label: "Form description", name: "form_description", widget: "string" }
+              - { label: "Name label", name: "name_label", widget: "string" }
+              - { label: "Name placeholder", name: "name_placeholder", widget: "string" }
+              - { label: "Phone field label", name: "phone_field_label", widget: "string" }
+              - { label: "Phone placeholder", name: "phone_placeholder", widget: "string" }
+              - { label: "Email label", name: "email_label", widget: "string" }
+              - { label: "Email placeholder", name: "email_placeholder", widget: "string" }
+              - { label: "Service field label", name: "service_label", widget: "string" }
+              - { label: "Service placeholder", name: "service_placeholder", widget: "string" }
+              - label: "Service options"
+                name: "service_options"
+                widget: "list"
+                field: { label: "Service", name: "service", widget: "string" }
+              - { label: "Date label", name: "date_label", widget: "string" }
+              - { label: "Submit button", name: "submit_label", widget: "string" }
+              - { label: "Consent notice", name: "consent_text", widget: "text" }
+              - { label: "Success message (use {name} for patient name)", name: "success_message", widget: "text" }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Practice description", name: "description", widget: "text" }
+              - { label: "Quick links heading", name: "quick_links_title", widget: "string" }
+              - label: "Quick links"
+                name: "quick_links"
+                widget: "list"
+                fields:
+                  - { label: "Link label", name: "label", widget: "string" }
+                  - { label: "Link destination", name: "href", widget: "string" }
+              - { label: "Contact heading", name: "contact_title", widget: "string" }
+              - { label: "Hours heading", name: "hours_title", widget: "string" }
+              - label: "Clinic hours"
+                name: "clinic_hours"
+                widget: "list"
+                fields:
+                  - { label: "Day", name: "day", widget: "string" }
+                  - { label: "Hours", name: "hours", widget: "string" }
+              - { label: "Emergency link label", name: "emergency_link_label", widget: "string" }
+              - { label: "Copyright text", name: "copyright", widget: "string" }
+              - { label: "Closing note", name: "closing_note", widget: "string" }
+          - label: "AI chat assistant"
+            name: "chat"
+            widget: "object"
+            fields:
+              - { label: "Assistant title", name: "title", widget: "string" }
+              - { label: "Assistant status", name: "status", widget: "string" }
+              - { label: "Chat bubble label", name: "toggle_label", widget: "string" }
+              - { label: "Welcome message", name: "welcome_message", widget: "text" }
+              - label: "Quick replies"
+                name: "quick_replies"
+                widget: "list"
+                fields:
+                  - { label: "Button label", name: "label", widget: "string" }
+                  - { label: "Message sent", name: "prompt", widget: "string" }
+              - { label: "Input accessibility label", name: "input_label", widget: "string" }
+              - { label: "Input placeholder", name: "input_placeholder", widget: "string" }
+              - { label: "Send button accessibility label", name: "send_label", widget: "string" }
+              - { label: "Close chat accessibility label", name: "close_label", widget: "string" }
+              - { label: "Open chat bubble accessibility label", name: "open_accessibility_label", widget: "string" }
+              - { label: "Close chat bubble accessibility label", name: "close_accessibility_label", widget: "string" }
+              - label: "Automated responses"
+                name: "replies"
+                widget: "object"
+                fields:
+                  - { label: "Booking response (use {phone})", name: "booking", widget: "text" }
+                  - { label: "Insurance response (use {phone})", name: "insurance", widget: "text" }
+                  - { label: "Emergency response (use {phone})", name: "emergency", widget: "text" }
+                  - { label: "Hours response", name: "hours", widget: "text" }
+                  - { label: "Cost response", name: "cost", widget: "text" }
+                  - { label: "Location response (use {phone})", name: "location", widget: "text" }
+                  - { label: "Default response (use {phone})", name: "default", widget: "text" }

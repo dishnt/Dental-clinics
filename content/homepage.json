@@ -1,6 +1,185 @@
 {
-  "hero_title": "Your Smile Deserves Extraordinary Care",
-  "hero_subtitle": "Dallas's premier cosmetic and general dental practice. Painless care, modern technology, and same-day bookings.",
-  "phone_number": "(214) 555-01933",
-  "emergency_notice": "24/7 Emergency Care Available"
+  "site": {
+    "name": "Apex Dental Clinic",
+    "brand_word": "apex",
+    "brand_suffix": "DENTAL CLINIC",
+    "page_title": "Apex Dental Clinic | Dr. Naz Parvez | Dallas",
+    "meta_description": "Discover thoughtful, modern dental care with Dr. Naz Parvez at Apex Dental Clinic in Dallas. Book your next appointment.",
+    "emergency_notice": "24/7 Emergency Care Available",
+    "phone_number": "(214) 555-01933",
+    "phone_link": "+121455501933",
+    "hours_notice": "Mon–Fri, 8am–6pm · Sat, 9am–2pm",
+    "address": "Serving Dallas, Texas",
+    "email": ""
+  },
+  "navigation": {
+    "links": [
+      { "label": "Services", "href": "#services" },
+      { "label": "Why us", "href": "#why-us" },
+      { "label": "Our dentist", "href": "#doctor" },
+      { "label": "Reviews", "href": "#reviews" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "appointment_label": "Book an appointment",
+    "menu_open_label": "Open navigation menu",
+    "menu_close_label": "Close navigation menu"
+  },
+  "hero": {
+    "badge": "YOUR NEIGHBORHOOD SMILE EXPERTS",
+    "title": "Your Smile Deserves Extraordinary Care",
+    "subtitle": "Dallas's premier cosmetic and general dental practice. Painless care, modern technology, and same-day bookings.",
+    "primary_cta": "Book your visit",
+    "call_cta": "Call us now",
+    "image": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=85",
+    "image_alt": "A welcoming, modern dental clinic",
+    "image_badge_title": "Gentle care, always",
+    "image_badge_subtitle": "You're in good hands",
+    "image_caption_title": "A brighter kind of dental care",
+    "image_caption_subtitle": "Personal care. Beautiful results.",
+    "availability_title": "Today, too",
+    "availability_subtitle": "Appointments available",
+    "trust_badges": [
+      { "value": "4.9", "suffix": "★", "label": "Patient rating" },
+      { "value": "15k", "suffix": "+", "label": "Happy patients" },
+      { "value": "15", "suffix": "+", "label": "Years of care" }
+    ]
+  },
+  "doctor": {
+    "eyebrow": "GET TO KNOW YOUR DENTIST",
+    "title": "Meet Dr. Naz Parvez",
+    "image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1000&q=85",
+    "image_alt": "Stock portrait of a dental professional",
+    "image_badge_title": "A thoughtful approach to every smile",
+    "image_badge_subtitle": "Care that starts with listening",
+    "paragraphs": [
+      "A great visit starts with feeling heard. Dr. Naz Parvez takes the time to understand your concerns, explain your options in plain language, and help you choose a care plan that feels right for you.",
+      "Whether you’re here for a routine checkup or exploring treatment, you can expect a gentle approach, honest answers, and care centered around your comfort."
+    ],
+    "highlights": [
+      { "title": "Time to listen", "description": "Your questions and goals come first." },
+      { "title": "Clear guidance", "description": "Understand your options, with no pressure." }
+    ],
+    "cta_label": "Meet your dentist"
+  },
+  "features_section": {
+    "eyebrow": "A BETTER DENTAL VISIT",
+    "title": "Care that puts you first",
+    "description": "Your comfort matters as much as your smile. Here's what makes an Apex visit feel different.",
+    "features": [
+      { "icon": "sparkles", "title": "Advanced AI Tech", "description": "Advanced digital imaging and AI-assisted tools help us make your care more precise." },
+      { "icon": "heart", "title": "Painless procedures", "description": "We take time to listen, explain every step, and keep you comfortable throughout." },
+      { "icon": "wallet", "title": "0% financing", "description": "Ask us about 0% financing options that can make your treatment more manageable." },
+      { "icon": "clock", "title": "Urgent care", "description": "Dental emergency? Call our team and we'll help you find the earliest care." }
+    ]
+  },
+  "services_section": {
+    "eyebrow": "HOW WE CAN HELP",
+    "title": "Good care for every smile",
+    "description": "From your regular checkup to a smile transformation, find the care that's right for you.",
+    "link_label": "Find your treatment",
+    "services": [
+      { "icon": "toothbrush", "category": "Preventive", "title": "General cleanings", "description": "Keep your smile healthy with a thorough cleaning, exam, and personalized advice.", "price_label": "Starting at", "price": "$99" },
+      { "icon": "sun", "category": "Cosmetic", "title": "Teeth whitening", "description": "A brighter smile with comfortable, professional whitening tailored to you.", "price_label": "Starting at", "price": "$249" },
+      { "icon": "smile", "category": "Cosmetic", "title": "Cosmetic dentistry", "description": "Thoughtful veneers and bonding to help you feel confident in your smile.", "price_label": "Consultation", "price": "Complimentary" },
+      { "icon": "implant", "category": "Restorative", "title": "Dental implants", "description": "A secure, natural-looking replacement designed to help restore your smile.", "price_label": "Starting at", "price": "$1,999" },
+      { "icon": "align", "category": "Orthodontics", "title": "Orthodontics", "description": "Explore clear aligners and personalized plans for a straighter, healthier smile.", "price_label": "Consultation", "price": "Complimentary" },
+      { "icon": "heart", "category": "Same-day help", "title": "Emergency care", "description": "Prompt, compassionate attention when an unexpected toothache can't wait.", "price_label": "Call us", "price": "(214) 555-01933", "price_is_phone": true }
+    ]
+  },
+  "callout": {
+    "eyebrow": "A LITTLE MORE PEACE OF MIND",
+    "title": "Good care should feel good, too.",
+    "description": "No pressure, no judgment—just clear answers, a friendly team, and a plan that works for you.",
+    "cta_label": "Meet your care team"
+  },
+  "reviews_section": {
+    "eyebrow": "KIND WORDS, REAL SMILES",
+    "title": "Our patients say it best",
+    "rating": "4.9 out of 5",
+    "rating_caption": "from our happy patients",
+    "verified_label": "VERIFIED",
+    "reviews": [
+      { "stars": 5, "quote": "I used to dread going to the dentist. Everyone here made me feel comfortable from the minute I walked in. Best cleaning I've ever had!", "patient_name": "Sarah M.", "patient_since": "Patient since 2021", "initials": "SM", "avatar_color": "sky" },
+      { "stars": 5, "quote": "The team was so kind and explained every part of my treatment. My new smile has made such a difference. I can't recommend Apex enough.", "patient_name": "James D.", "patient_since": "Patient since 2022", "initials": "JD", "avatar_color": "mint" },
+      { "stars": 5, "quote": "I had an emergency over the weekend and they were incredibly responsive. They fit me in first thing and took such good care of me.", "patient_name": "Amanda L.", "patient_since": "Patient since 2020", "initials": "AL", "avatar_color": "violet" }
+    ]
+  },
+  "booking": {
+    "eyebrow": "LET'S GET YOU SMILING",
+    "title": "Your next visit starts here",
+    "description": "Tell us a little about yourself and the team will call to find a time that works. We can't wait to meet you.",
+    "phone_label": "Call us directly",
+    "hours_label": "We're open",
+    "address_label": "Serving our community",
+    "welcome_badge": "New patients are always welcome",
+    "form_title": "Request an appointment",
+    "form_description": "We'll be in touch to confirm your visit.",
+    "name_label": "Full name",
+    "name_placeholder": "Jane Smith",
+    "phone_field_label": "Phone number",
+    "phone_placeholder": "(555) 123-4567",
+    "email_label": "Email address",
+    "email_placeholder": "jane@example.com",
+    "service_label": "What can we help with?",
+    "service_placeholder": "Choose a service",
+    "service_options": [
+      "General cleanings",
+      "Teeth whitening",
+      "Cosmetic dentistry",
+      "Dental implants",
+      "Orthodontics",
+      "Emergency care",
+      "Something else"
+    ],
+    "date_label": "Preferred date",
+    "submit_label": "Confirm booking request",
+    "consent_text": "By submitting, you agree that our team may contact you about your appointment.",
+    "success_message": "Thanks, {name}! Your appointment request has been received. Our team will call you to confirm your visit."
+  },
+  "footer": {
+    "description": "Thoughtful, modern dentistry for brighter, healthier smiles. We're glad you're here.",
+    "quick_links_title": "Explore",
+    "quick_links": [
+      { "label": "Our services", "href": "#services" },
+      { "label": "Why choose Apex", "href": "#why-us" },
+      { "label": "Patient reviews", "href": "#reviews" },
+      { "label": "Book a visit", "href": "#booking" }
+    ],
+    "contact_title": "Come see us",
+    "hours_title": "Clinic hours",
+    "clinic_hours": [
+      { "day": "Monday – Friday", "hours": "8am – 6pm" },
+      { "day": "Saturday", "hours": "9am – 2pm" },
+      { "day": "Sunday", "hours": "Closed" }
+    ],
+    "emergency_link_label": "Emergency? Call us",
+    "copyright": "Apex Dental Clinic. All rights reserved.",
+    "closing_note": "Care with a little more heart."
+  },
+  "chat": {
+    "title": "Apex AI Assistant",
+    "status": "Here to help · Replies instantly",
+    "toggle_label": "Ask Apex",
+    "welcome_message": "Hi there! 👋 I'm the Apex AI Assistant. What can I help you with today?",
+    "quick_replies": [
+      { "label": "Book Cleanings", "prompt": "Book Cleanings" },
+      { "label": "Insurance Info", "prompt": "Insurance Info" },
+      { "label": "Emergency Care", "prompt": "Emergency Care" }
+    ],
+    "input_label": "Type your message",
+    "input_placeholder": "Type your message...",
+    "send_label": "Send message",
+    "close_label": "Close chat",
+    "open_accessibility_label": "Open Apex AI Assistant",
+    "close_accessibility_label": "Close Apex AI Assistant",
+    "replies": {
+      "booking": "We’d love to see you! Request a visit using the appointment form on this page, or call us at {phone}. Our team will help find a time that works.",
+      "insurance": "We’re happy to help with insurance questions. Coverage varies by plan, so please call {phone} and our team can walk you through your options.",
+      "emergency": "We’re sorry you’re uncomfortable. Call us now at {phone} for help finding the earliest available emergency visit. If you have a life-threatening emergency, call your local emergency services.",
+      "hours": "We’re open Monday to Friday, 8am–6pm, and Saturday, 9am–2pm. We’re closed on Sundays.",
+      "cost": "Costs depend on your treatment. General cleanings start at $99, and we offer complimentary consultations for cosmetic dentistry and orthodontics. Ask our team about 0% financing.",
+      "location": "Apex Dental Clinic serves patients in Dallas, Texas. Call {phone} for directions and appointment information.",
+      "default": "Thanks for reaching out! Our friendly team can help with that. Call {phone}, or request an appointment using the booking form on this page."
+    }
+  }
 }
