@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "content/homepage.json"
+        format: "json"
+        fields:
+          - label: "Hero title"
+            name: "hero_title"
+            widget: "string"
+          - label: "Hero subtitle"
+            name: "hero_subtitle"
+            widget: "text"
+          - label: "Phone number"
+            name: "phone_number"
+            widget: "string"
+          - label: "Emergency notice"
+            name: "emergency_notice"
+            widget: "string"

@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Discover thoughtful, modern dental care at Apex Dental Clinic. Book your next appointment with our friendly team.">
-  <title>Apex Dental Clinic | A better kind of dental care</title>
+  <meta name="description" content="Discover thoughtful, modern dental care with Dr. Naz Parvez at Apex Dental Clinic in Dallas. Book your next appointment.">
+  <title>Apex Dental Clinic | Dr. Naz Parvez | Dallas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -68,9 +69,10 @@
 
   <div class="bg-sky-950 text-sky-50">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-1 px-5 py-2 text-xs sm:flex-row sm:px-8 sm:text-sm">
-      <a href="tel:+15550142873" class="inline-flex items-center gap-2 font-medium transition hover:text-white">
+      <a href="tel:+12145550199" class="inline-flex items-center gap-2 font-medium transition hover:text-white">
         <svg class="h-4 w-4 text-mint-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg>
-        Dental emergency? Call <span class="font-bold">+1 (555) 014-2873</span>
+        <span id="emergency-notice" class="font-semibold">24/7 Emergency Care Available</span>
+        <span id="phone-number" class="font-bold">(214) 555-0199</span>
       </a>
       <p class="inline-flex items-center gap-2 text-sky-100/85">
         <svg class="h-4 w-4 text-mint-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-clock"/></svg>
@@ -124,14 +126,14 @@
             <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-mint-500 opacity-40"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-mint-500"></span></span>
             YOUR NEIGHBORHOOD SMILE EXPERTS
           </div>
-          <h1 class="display-font text-4xl font-extrabold leading-[1.12] tracking-[-0.045em] text-slate-900 sm:text-5xl lg:text-[3.65rem]">Your smile deserves <span class="text-sky-500">extraordinary care.</span></h1>
-          <p class="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">Modern dentistry, a genuinely caring team, and a little more reason to smile. Meet the dental visit you might actually look forward to.</p>
+          <h1 id="hero-title" class="display-font text-4xl font-extrabold leading-[1.12] tracking-[-0.045em] text-slate-900 sm:text-5xl lg:text-[3.65rem]">Your Smile Deserves Extraordinary Care</h1>
+          <p id="hero-subtitle" class="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">Dallas's premier cosmetic and general dental practice. Painless care, modern technology, and same-day bookings.</p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href="#booking" class="inline-flex items-center justify-center gap-2 rounded-xl bg-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-sky-500/25 transition hover:-translate-y-0.5 hover:bg-sky-600">
               Book your visit
               <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-arrow"/></svg>
             </a>
-            <a href="tel:+15550142873" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 transition hover:border-sky-200 hover:text-sky-700">
+            <a href="tel:+12145550199" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 transition hover:border-sky-200 hover:text-sky-700">
               <svg class="h-4 w-4 text-sky-500" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg>
               Call us now
             </a>
@@ -173,7 +175,7 @@
           <div class="absolute -left-4 top-12 h-24 w-24 rounded-full bg-sky-100 sm:-left-7 sm:h-32 sm:w-32"></div>
           <div class="absolute -bottom-4 -right-3 h-28 w-28 rounded-full border-[16px] border-mint-100 sm:-right-5 sm:h-36 sm:w-36"></div>
           <div class="relative overflow-hidden rounded-[2rem] bg-sky-50 shadow-soft">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="A dentist in a white coat ready to welcome patients" class="h-[360px] w-full object-cover sm:h-[460px]" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Stock portrait of a dental professional" class="h-[360px] w-full object-cover sm:h-[460px]" loading="lazy">
             <div class="absolute inset-x-4 bottom-4 flex items-center gap-3 rounded-2xl border border-white/70 bg-white/95 p-4 shadow-lg backdrop-blur sm:inset-x-6 sm:bottom-6 sm:p-5">
               <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-mint-50 text-mint-600">
                 <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-heart"/></svg>
@@ -187,8 +189,8 @@
         </div>
         <div class="max-w-xl">
           <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-600">GET TO KNOW YOUR DENTIST</p>
-          <h2 class="display-font mt-3 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-4xl">A dentist who sees you, not just your teeth.</h2>
-          <p class="mt-5 text-base leading-7 text-slate-600">A great visit starts with feeling heard. At Apex, your dentist takes the time to understand your concerns, explain your options in plain language, and make a care plan that feels right for you.</p>
+          <h2 class="display-font mt-3 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-4xl">Meet Dr. Naz Parvez</h2>
+          <p class="mt-5 text-base leading-7 text-slate-600">A great visit starts with feeling heard. Dr. Naz Parvez takes the time to understand your concerns, explain your options in plain language, and help you choose a care plan that feels right for you.</p>
           <p class="mt-4 text-base leading-7 text-slate-600">Whether you’re here for a routine checkup or exploring treatment, you can expect a gentle approach, honest answers, and care centered around your comfort.</p>
           <div class="mt-7 grid gap-4 sm:grid-cols-2">
             <div class="flex items-start gap-3">
@@ -218,22 +220,22 @@
         <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card">
             <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-sky-100 text-sky-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-sparkles"/></svg></span>
-            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Smarter technology</h3>
+            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Advanced AI Tech</h3>
             <p class="mt-2 text-sm leading-6 text-slate-600">Advanced digital imaging and AI-assisted tools help us make your care more precise.</p>
           </article>
           <article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card">
             <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-mint-50 text-mint-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-heart"/></svg></span>
-            <h3 class="display-font mt-5 text-base font-bold text-slate-900">A gentler touch</h3>
+            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Painless procedures</h3>
             <p class="mt-2 text-sm leading-6 text-slate-600">We take time to listen, explain every step, and keep you comfortable throughout.</p>
           </article>
           <article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card">
             <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-600"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-wallet"/></svg></span>
-            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Flexible financing</h3>
+            <h3 class="display-font mt-5 text-base font-bold text-slate-900">0% financing</h3>
             <p class="mt-2 text-sm leading-6 text-slate-600">Ask us about 0% financing options that can make your treatment more manageable.</p>
           </article>
           <article class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6 transition hover:-translate-y-1 hover:shadow-card">
             <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-rose-50 text-rose-500"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-clock"/></svg></span>
-            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Here when it matters</h3>
+            <h3 class="display-font mt-5 text-base font-bold text-slate-900">Urgent care</h3>
             <p class="mt-2 text-sm leading-6 text-slate-600">Dental emergency? Call our team and we'll help you find the earliest care.</p>
           </article>
         </div>
@@ -279,7 +281,7 @@
           <article class="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-card sm:p-7">
             <div class="flex items-start justify-between"><span class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-orange-500"><svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7"><use href="#icon-heart"/></svg></span><span class="rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-600">Same-day help</span></div>
             <h3 class="display-font mt-5 text-lg font-bold text-slate-900">Emergency care</h3><p class="mt-2 min-h-[48px] text-sm leading-6 text-slate-600">Prompt, compassionate attention when an unexpected toothache can't wait.</p>
-            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">Call us</span><a href="tel:+15550142873" class="text-sm font-bold text-sky-600 hover:text-sky-700">+1 (555) 014-2873</a></div>
+            <div class="mt-5 flex items-center justify-between border-t border-slate-100 pt-4"><span class="text-xs font-medium text-slate-500">Call us</span><a href="tel:+12145550199" class="text-sm font-bold text-sky-600 hover:text-sky-700"><span data-clinic-phone-text>(214) 555-0199</span></a></div>
           </article>
         </div>
       </div>
@@ -330,9 +332,9 @@
           <h2 class="display-font mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Your next visit starts here</h2>
           <p class="mt-4 text-base leading-7 text-slate-600">Tell us a little about yourself and the team will call to find a time that works. We can't wait to meet you.</p>
           <div class="mt-8 space-y-5">
-            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg></span><div><p class="text-xs text-slate-500">Call us directly</p><a href="tel:+15550142873" class="text-sm font-bold text-slate-900 hover:text-sky-600">+1 (555) 014-2873</a></div></div>
+            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg></span><div><p class="text-xs text-slate-500">Call us directly</p><a href="tel:+12145550199" class="text-sm font-bold text-slate-900 hover:text-sky-600"><span data-clinic-phone-text>(214) 555-0199</span></a></div></div>
             <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-clock"/></svg></span><div><p class="text-xs text-slate-500">We're open</p><p class="text-sm font-bold text-slate-900">Mon–Fri, 8am–6pm · Sat, 9am–2pm</p></div></div>
-            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-pin"/></svg></span><div><p class="text-xs text-slate-500">Come on by</p><p class="text-sm font-bold text-slate-900">123 Main Street, Suite 200</p></div></div>
+            <div class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-sky-600 shadow-sm"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-pin"/></svg></span><div><p class="text-xs text-slate-500">Serving our community</p><p class="text-sm font-bold text-slate-900">Dallas, Texas</p></div></div>
           </div>
           <p class="mt-8 inline-flex items-center gap-2 rounded-lg bg-mint-50 px-3 py-2 text-xs font-semibold text-mint-600"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><use href="#icon-check"/></svg> New patients are always welcome</p>
         </div>
@@ -367,8 +369,8 @@
         <p class="mt-4 max-w-xs text-sm leading-6 text-sky-100/65">Thoughtful, modern dentistry for brighter, healthier smiles. We're glad you're here.</p>
       </div>
       <div><h3 class="text-sm font-bold text-white">Explore</h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li><a class="transition hover:text-white" href="#services">Our services</a></li><li><a class="transition hover:text-white" href="#why-us">Why choose Apex</a></li><li><a class="transition hover:text-white" href="#reviews">Patient reviews</a></li><li><a class="transition hover:text-white" href="#booking">Book a visit</a></li></ul></div>
-      <div><h3 class="text-sm font-bold text-white">Come see us</h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-pin"/></svg>123 Main Street, Suite 200<br>Springfield, ST 12345</li><li><a class="flex items-center gap-2 transition hover:text-white" href="tel:+15550142873"><svg class="h-4 w-4 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg>+1 (555) 014-2873</a></li><li><a class="transition hover:text-white" href="mailto:hello@apexdental.example">hello@apexdental.example</a></li></ul></div>
-      <div><h3 class="text-sm font-bold text-white">Clinic hours</h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li class="flex justify-between gap-4"><span>Monday – Friday</span><span class="text-white">8am – 6pm</span></li><li class="flex justify-between gap-4"><span>Saturday</span><span class="text-white">9am – 2pm</span></li><li class="flex justify-between gap-4"><span>Sunday</span><span class="text-white">Closed</span></li></ul><a href="tel:+15550142873" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-mint-400 transition hover:text-mint-300"><span class="h-2 w-2 rounded-full bg-mint-500"></span>Emergency? Call us</a></div>
+      <div><h3 class="text-sm font-bold text-white">Come see us</h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-pin"/></svg>Serving Dallas, Texas</li><li><a class="flex items-center gap-2 transition hover:text-white" href="tel:+12145550199"><svg class="h-4 w-4 text-sky-400" fill="none" stroke="currentColor" stroke-width="1.8"><use href="#icon-phone"/></svg><span data-clinic-phone-text>(214) 555-0199</span></a></li></ul></div>
+      <div><h3 class="text-sm font-bold text-white">Clinic hours</h3><ul class="mt-4 space-y-3 text-sm text-sky-100/65"><li class="flex justify-between gap-4"><span>Monday – Friday</span><span class="text-white">8am – 6pm</span></li><li class="flex justify-between gap-4"><span>Saturday</span><span class="text-white">9am – 2pm</span></li><li class="flex justify-between gap-4"><span>Sunday</span><span class="text-white">Closed</span></li></ul><a href="tel:+12145550199" data-clinic-phone class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-mint-400 transition hover:text-mint-300"><span class="h-2 w-2 rounded-full bg-mint-500"></span>Emergency? Call us</a></div>
     </div>
     <div class="border-t border-white/10">
       <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 py-5 text-xs text-sky-100/50 sm:flex-row sm:items-center sm:justify-between sm:px-8">
@@ -482,14 +484,15 @@
 
     function getBotReply(prompt) {
       const text = prompt.toLowerCase();
+      const clinicPhone = document.getElementById('phone-number').textContent;
       if (text.includes('clean') || text.includes('book') || text.includes('appointment') || text.includes('schedule')) {
-        return 'We’d love to see you! Request a visit using the appointment form on this page, or call us at +1 (555) 014-2873. Our team will help find a time that works.';
+        return `We’d love to see you! Request a visit using the appointment form on this page, or call us at ${clinicPhone}. Our team will help find a time that works.`;
       }
       if (text.includes('insurance') || text.includes('coverage') || text.includes('plan')) {
-        return 'We’re happy to help with insurance questions. Coverage varies by plan, so please call +1 (555) 014-2873 and our team can walk you through your options.';
+        return `We’re happy to help with insurance questions. Coverage varies by plan, so please call ${clinicPhone} and our team can walk you through your options.`;
       }
       if (text.includes('emergency') || text.includes('urgent') || text.includes('pain') || text.includes('toothache')) {
-        return 'We’re sorry you’re uncomfortable. Call us now at +1 (555) 014-2873 for help finding the earliest available emergency visit. If you have a life-threatening emergency, call your local emergency services.';
+        return `We’re sorry you’re uncomfortable. Call us now at ${clinicPhone} for help finding the earliest available emergency visit. If you have a life-threatening emergency, call your local emergency services.`;
       }
       if (text.includes('hour') || text.includes('open') || text.includes('time')) {
         return 'We’re open Monday to Friday, 8am–6pm, and Saturday, 9am–2pm. We’re closed on Sundays.';
@@ -498,9 +501,9 @@
         return 'Costs depend on your treatment. General cleanings start at $99, and we offer complimentary consultations for cosmetic dentistry and orthodontics. Ask our team about 0% financing.';
       }
       if (text.includes('address') || text.includes('location') || text.includes('where')) {
-        return 'You can find us at 123 Main Street, Suite 200, Springfield, ST 12345. Call +1 (555) 014-2873 if you need help finding us.';
+        return `Apex Dental Clinic serves patients in Dallas, Texas. Call ${clinicPhone} for directions and appointment information.`;
       }
-      return 'Thanks for reaching out! Our friendly team can help with that. Call +1 (555) 014-2873, or request an appointment using the booking form on this page.';
+      return `Thanks for reaching out! Our friendly team can help with that. Call ${clinicPhone}, or request an appointment using the booking form on this page.`;
     }
 
     function sendChatMessage(text) {
@@ -520,6 +523,50 @@
       const button = event.target.closest('.quick-reply');
       if (button) sendChatMessage(button.textContent);
     });
+
+    fetch('/content/homepage.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Could not load homepage content: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((content) => {
+        if (typeof content.hero_title === 'string' && content.hero_title.trim()) {
+          document.getElementById('hero-title').textContent = content.hero_title;
+        }
+        if (typeof content.hero_subtitle === 'string' && content.hero_subtitle.trim()) {
+          document.getElementById('hero-subtitle').textContent = content.hero_subtitle;
+        }
+        if (typeof content.phone_number === 'string' && content.phone_number.trim()) {
+          document.getElementById('phone-number').textContent = content.phone_number;
+          const digits = content.phone_number.replace(/\D/g, '');
+          const internationalNumber = digits.startsWith('1') ? digits : `1${digits}`;
+          const phoneHref = `tel:+${internationalNumber}`;
+          document.querySelectorAll('a[href^="tel:"]').forEach((element) => {
+            element.setAttribute('href', phoneHref);
+          });
+          document.querySelectorAll('[data-clinic-phone-text]').forEach((element) => {
+            element.textContent = content.phone_number;
+          });
+        }
+        if (typeof content.emergency_notice === 'string' && content.emergency_notice.trim()) {
+          document.getElementById('emergency-notice').textContent = content.emergency_notice;
+        }
+      })
+      .catch((error) => {
+        console.error('Unable to load Apex Dental Clinic CMS content.', error);
+      });
+
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', (user) => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            window.location.href = '/admin/';
+          });
+        }
+      });
+    }
   </script>
 </body>
 </html>
